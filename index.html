@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="Images/ondas-sonoras.png">
+  <title>Música y Emociones</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<main id="main-content">
+
+  <body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Música y Emociones</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sobre-mi.html">Sobre mí</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="artistas.html">Artistas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="canciones.html">Canciones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="playlist.html">Playlists</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Inicio - Carrusel -->
+    <section id="inicio" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="hover">
+      <!--controles de navegación -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#inicio" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#inicio" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#inicio" data-bs-slide-to="2"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/Carrusel/vinilo2.jpg" class="d-block w-100" alt="Música y emociones">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>La música es el lenguaje del alma</h5>
+            <p>Explora cómo la música conecta con nuestras emociones.</p>
+            <a href="artistas.html" class="btn btn-primary mt-3">Conoce más</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/Carrusel/vinilo.jpg" class="d-block w-100" alt="Recomendaciones">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Descubre canciones que tocan el corazón</h5>
+            <a href="canciones.html" class="btn btn-primary mt-3">Ver canciones</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/Carrusel/fond.jpg" class="d-block w-100" alt="Playlists">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Playlists para cada momento</h5>
+            <a href="playlist.html" class="btn btn-primary mt-3">Explorar playlists</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- botones de anterior/siguiente -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#inicio" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#inicio" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </section>
+
+    <!-- Sección Impacto Emocional de la Música -->
+    <section class="emotional-impact py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="impact-content p-4">
+              <h2 class="display-5 mb-4">El Poder de la Música en Nuestras Emociones</h2>
+              <p class="lead mb-4">La música es un lenguaje universal que trasciende el tiempo, la cultura y las
+                palabras. Tiene el poder de despertar emociones profundas, conectar con nuestros recuerdos más íntimos y
+                ser un refugio en momentos de soledad, alegría o tristeza.
+                La música tiene el poder extraordinario de tocar directamente nuestra alma,
+                despertando emociones que a veces ni siquiera sabíamos que existían.</p>
+              <div class="emotion-cards">
+                <div class="emotion-card mb-3">
+                  <i class="bi bi-heart-pulse text-danger"></i>
+                  <p>Aumenta los latidos del corazón con melodías intensas</p>
+                </div>
+                <div class="emotion-card mb-3">
+                  <i class="bi bi-emoji-smile text-warning"></i>
+                  <p>Libera dopamina, haciéndonos sentir felicidad y placer</p>
+                </div>
+                <div class="emotion-card mb-3">
+                  <i class="bi bi-cloud-rain text-primary"></i>
+                  <p>Nos ayuda a procesar y expresar la melancolía</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="impact-quote text-center p-4">
+              <blockquote class="blockquote">
+                <p class="mb-4">"La música expresa lo que no puede ser dicho y aquello sobre lo que es imposible
+                  permanecer en silencio"</p>
+                <footer class="blockquote-footer">Victor Hugo</footer>
+              </blockquote>
+              <i class="bi bi-music-note-beamed display-1 text-primary opacity-25"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Experiencias Musicales -->
+    <section class="musical-experiences py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5">Momentos que la Música Transforma</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="experience-card text-center p-4">
+              <div class="experience-icon mb-3">
+                <i class="bi bi-sunrise display-4"></i>
+              </div>
+              <h4>Amanecer</h4>
+              <p>Esas melodías que nos despiertan el alma y nos llenan de energía para empezar el día.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="experience-card text-center p-4">
+              <div class="experience-icon mb-3">
+                <i class="bi bi-stars display-4"></i>
+              </div>
+              <h4>Reflexión</h4>
+              <p>Canciones que nos llevan a un viaje interior y nos ayudan a conectar con nuestro ser.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="experience-card text-center p-4">
+              <div class="experience-icon mb-3">
+                <i class="bi bi-moon-stars display-4"></i>
+              </div>
+              <h4>Noche</h4>
+              <p>Sonidos que acompañan nuestros momentos de paz y nos ayudan a encontrar la calma.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-light py-4 mt-5">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Columna de redes sociales -->
+          <div class="col-md-4">
+            <h5 class="mb-3">Sígueme</h5>
+            <div class="social-links">
+              <a href="https://github.com/Frann1411" target="_blank" class="text-light me-3"><i
+                  class="bi bi-github fs-4"></i></a>
+              <a href="https://www.instagram.com/frann14.11?igsh=MWNpeHpvYTNza2E0MA==" target="_blank"
+                class="text-light me-3"><i class="bi bi-instagram fs-4"></i></a>
+              <a href="https://x.com/Frann1411" target="_blank" class="text-light me-3"><i
+                  class="bi bi-twitter fs-4"></i></a>
+              <a href="https://www.youtube.com/@franklingonzalez1224" target="_blank" class="text-light me-3"><i
+                  class="bi bi-youtube fs-4"></i></a>
+            </div>
+          </div>
+
+          <!-- Columna de contacto -->
+          <div class="col-md-4">
+            <h5 class="text-center mb-3">Contacto</h5>
+            <p><i class="bi bi-envelope-fill me-2"></i> frann2022gonzalez@gmail.com </p>
+            <p><i class="bi bi-geo-alt-fill me-2"></i> El Salvador </p>
+          </div>
+        </div>
+        <!-- Derechos de autor -->
+        <div class="row mt-4">
+          <div class="col-12">
+            <hr class="bg-light">
+            <p class="text-center mb-0">
+              © 2025 Música y Emociones. Todos los derechos reservados.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</main>
+
+</html>
