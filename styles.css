@@ -1,298 +1,167 @@
 /* Estilos para el Navbar */
 #navbar {
-    background: transparent;
-    transition: background 0.5s ease;
-  }
-  
-  #navbar.scrolled {
-    background: linear-gradient(90deg, #061a3f, #020a1a); /* Fondo al hacer scroll */
-  }
-  
-  .navbar-nav .nav-link {
-    position: relative;
-    transition: color 0.3s ease;
-  }
-  
-  .navbar-nav .nav-link:hover {
-    color: #ff6f61 !important; /* Color al hacer hover */
-  }
-  
-  .navbar-nav .nav-link::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    background: #ff6f61; /* Color del subrayado */
-    bottom: 0;
-    left: 0;
-    transition: width 0.3s ease;
-  }
-  
-  .navbar-nav .nav-link:hover::after {
-    width: 100%; /* Subrayado al hacer hover */
-  }
-  
-  .navbar {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
-  }
-  
-  /* Animación del menú desplegable */
-  .navbar-toggler {
-    border: none;
-    outline: none;
-  }
-  
-  .navbar-toggler:focus {
-    box-shadow: none;
-  }
-  
-  .navbar-toggler-icon {
-    transition: transform 0.3s ease;
-  }
-  
-  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
-    transform: rotate(90deg); /* Gira el ícono al abrir el menú */
-  }
+  background: transparent;
+  transition: background 0.5s ease;
+}
+
+#navbar.scrolled {
+  background: linear-gradient(90deg, #061a3f, #020a1a);
+  /* Fondo al hacer scroll */
+}
+
+.navbar-nav .nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #d31121 !important;
+  /* Color al hacer hover */
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #720a00;
+  /* Color del subrayado */
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+  /* Subrayado al hacer hover */
+}
+
+.navbar {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Sombra */
+}
+
+/* Animación del menú desplegable */
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  transition: transform 0.3s ease;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+  transform: rotate(90deg);
+  /* Gira el ícono al abrir el menú */
+}
 
 .carousel-inner {
-    max-height: 200vh; /* Usa unidades viewport para hacerlo responsive */
+  max-height: 200vh;
+  /* Usa unidades viewport para hacerlo responsive */
 }
 
 .carousel-inner img {
-    object-fit: cover;
-    height: 70vh;
-    width: 50%;
+  object-fit: cover;
+  height: 70vh;
+  width: 50%;
 }
 
 /* Estilos para la sección "Sobre mí" */
-#sobre-mi {
-    background: linear-gradient(135deg, #f9f9f9, #e0e0e0);
-    padding: 4rem 0;
-    border-radius: 15px;
-  }
-  
-  .gradient-text {
-    background: linear-gradient(45deg, #ff6f61, #2a5298);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  
-  .profile-img {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .profile-img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  }
-  
-  .badge {
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-  }
-  
-  .badge:hover {
-    transform: translateY(-5px);
-    background-color: #ff6f61 !important;
-    color: white !important;
-  }
-  
-  .btn-outline-primary, .btn-outline-dark {
-    transition: transform 0.3s ease, background-color 0.3s ease;
-  }
-  
-  .btn-outline-primary:hover, .btn-outline-dark:hover {
-    transform: translateY(-5px);
-  }
-  
-  .bi-spotify, .bi-instagram {
-    transition: transform 0.3s ease;
-  }
-  
-  .btn:hover .bi-spotify, .btn:hover .bi-instagram {
-    transform: rotate(360deg);
-  }
-  
-  /* Animación para las notas musicales */
-  @keyframes float {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-20px);
-    }
-  }
-  
-  .floating-music-note {
-    position: absolute;
-    font-size: 2rem;
-    animation: float 3s ease-in-out infinite;
-  }
-  
-  .note-1 {
-    top: 10%;
-    left: 20%;
-    animation-delay: 2s;
-  }
-  
-  .note-2 {
-    top: 30%;
-    right: 10%;
-    animation-delay: 1s;
-  }
-  
-  .note-3 {
-    bottom: 10%;
-    left: 50%;
-    animation-delay: 2s;
-  }
-
-/* Estilos para la sección de artistas */
-#artistas {
-  background: linear-gradient(135deg, #f9f9f9, #e0e0e0);
-  padding: 4rem 0;
-  border-radius: 15px;
+.gradient-text {
+  background: linear-gradient(45deg, #ff6f61, #2a5298);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.card-img-wrapper {
-    height: 250px; /* Altura fija para todas las imágenes */
-    overflow: hidden;
-    position: relative;
+.profile-img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.artist-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.hover-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.hover-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15) !important;
-}
-
-.hover-card:hover .artist-img {
-    transform: scale(1.05);
-}
-
-.card {
-    border: none;
-    background-color: #fff;
-    border-radius: 0.5rem;
-}
-
-.card-title {
-    font-weight: 600;
-    margin-bottom: 0.75rem;
-}
-
-.card-text {
-    color: #6c757d;
-    font-size: 0.95rem;
-    line-height: 1.5;
+.profile-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .badge {
-    padding: 0.5em 1em;
-    font-weight: 500;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .card-img-wrapper {
-        height: 200px;
-    }
+.badge:hover {
+  transform: translateY(-5px);
+  background-color: #ff6f61 !important;
+  color: white !important;
 }
 
-@media (max-width: 576px) {
-    .card-img-wrapper {
-        height: 180px;
-    }
+.btn-outline-primary,
+.btn-outline-dark {
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-/* Estilos para el carrusel */
-.carousel {
-    border-radius: 1px;
-    overflow: hidden;
-  }
-  
-  .carousel-item {
-    transition: transform 1s ease-in-out;
-  }
-  
-  .carousel-item::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-  }
-  
-  .carousel-item img {
-    width: 70%;
-    height: auto;
-    max-height: 425px;
-    transition: transform 0.5s ease;
-  }
-  
-  .carousel-item:hover img {
-    transform: scale(1.1);
-  }
-  
-  .carousel-caption h5 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  }
-  
-  .carousel-caption p {
-    font-size: 1.2rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  }
-  
-  .carousel-indicators button {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.5);
-    border: none;
-    margin: 0 5px;
-  }
-  
-  .carousel-indicators .active {
-    background-color: #ff6f61;
-  }
-  
-  /* Estilos responsive */
-  @media (max-width: 768px) {
-    .carousel-caption h5 {
-      font-size: 1.5rem;
-    }
-  
-    .carousel-control-prev,
-    .carousel-control-next {
-      display: none;
-    }
-  }
-
-/* Estilos para la sección de canciones */
-#canciones {
-  background: linear-gradient(135deg, #f9f9f9, #e0e0e0);
-  padding: 4rem 0;
-  border-radius: 15px;
+.btn-outline-primary:hover,
+.btn-outline-dark:hover {
+  transform: translateY(-5px);
 }
 
+.bi-spotify,
+.bi-instagram {
+  transition: transform 0.3s ease;
+}
+
+.btn:hover .bi-spotify,
+.btn:hover .bi-instagram {
+  transform: rotate(360deg);
+}
+
+/* Animación para las notas musicales */
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.floating-music-note {
+  position: absolute;
+  font-size: 2rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+.note-1 {
+  top: 10%;
+  left: 20%;
+  animation-delay: 2s;
+}
+
+.note-2 {
+  top: 30%;
+  right: 10%;
+  animation-delay: 1s;
+}
+
+.note-3 {
+  bottom: 10%;
+  left: 50%;
+  animation-delay: 2s;
+}
+
+
+/* Estilos para la sección de artistas */
 .card-img-wrapper {
-  height: 250px; /* Altura fija para todas las imágenes */
+  height: 250px;
+  /* Altura fija para todas las imágenes */
   overflow: hidden;
   position: relative;
 }
@@ -319,7 +188,137 @@
 
 .card {
   border: none;
-  background-color: #fff;
+  border-radius: 0.5rem;
+}
+
+.card-title {
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #020a1a;
+}
+
+.card-text {
+  color: #202122;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.badge {
+  padding: 0.5em 1em;
+  font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card-img-wrapper {
+    height: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-img-wrapper {
+    height: 180px;
+  }
+}
+
+/* Estilos para el carrusel */
+.carousel {
+  border-radius: 1px;
+  overflow: hidden;
+}
+
+.carousel-item {
+  transition: transform 1s ease-in-out;
+}
+
+.carousel-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-item img {
+  width: 70%;
+  height: auto;
+  max-height: 425px;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item:hover img {
+  transform: scale(1.1);
+}
+
+.carousel-caption h5 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  margin: 0 5px;
+}
+
+.carousel-indicators .active {
+  background-color: #ff6f61;
+}
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+  .carousel-caption h5 {
+    font-size: 1.5rem;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none;
+  }
+}
+
+/* Estilos para la sección de canciones */
+.card-img-wrapper {
+  height: 250px;
+  /* Altura fija para todas las imágenes */
+  overflow: hidden;
+  position: relative;
+}
+
+.artist-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.hover-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.hover-card:hover .artist-img {
+  transform: scale(1.05);
+}
+
+.card-body {
+  border: none;
+  background-color: #c2ecec;
   border-radius: 0.5rem;
 }
 
@@ -365,7 +364,7 @@
 
 /* Estilos para el footer */
 .footer {
-  background-color: #212529;
+  background-color: #eaeef0;
 }
 
 .footer a {
@@ -392,25 +391,22 @@
 /* Ajustes responsivos */
 @media (max-width: 768px) {
   .social-links {
-      text-align: center;
+    text-align: center;
   }
-  
+
   .footer h5 {
-      margin-top: 1rem;
+    margin-top: 1rem;
   }
 }
 
 /* Estilos para la sección del impacto emocional */
-.emotional-impact {
-  background-color: #ffffff;
-}
 
 .emotion-card {
   display: flex;
   align-items: center;
   gap: 1rem;
   padding: 1rem;
-  background-color: #f8f9fa;
+  background-color: rgb(221, 233, 240);
   border-radius: 10px;
   transition: transform 0.3s ease;
 }
@@ -441,9 +437,9 @@
 
 /* Estilos para la sección de experiencias musicales */
 .experience-card {
-  background-color: white;
+  background-color: rgb(221, 233, 240);
   border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease;
   height: 100%;
 }
@@ -471,11 +467,11 @@
 /* Ajustes responsivos */
 @media (max-width: 768px) {
   .impact-quote {
-      margin-top: 2rem;
+    margin-top: 2rem;
   }
-  
+
   .emotion-card {
-      margin-bottom: 1rem;
+    margin-bottom: 1rem;
   }
 }
 
@@ -485,16 +481,17 @@
 }
 
 .playlist-card {
+  background-color: #c1f5d5;
   border: none;
   border-radius: 15px;
   transition: all 0.3s ease;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
 
 .playlist-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .playlist-icon {
@@ -546,10 +543,10 @@
 /* Ajustes responsivos */
 @media (max-width: 768px) {
   .playlist-header {
-      padding: 1rem 0;
+    padding: 1rem 0;
   }
-  
+
   .playlist-card {
-      margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 }

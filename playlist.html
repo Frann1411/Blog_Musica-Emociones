@@ -12,9 +12,10 @@
 
 <main>
 
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <body data-bs-theme="light">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark">
       <div class="container-fluid">
+        <button onclick="cambiarTema()" class=" btn rounded-fill"><i id="d1-icon" class="bi bi-moon-fill"></i></button>
         <a class="navbar-brand" href="index.html">Música y Emociones</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span class="navbar-toggler-icon"></span>
@@ -42,10 +43,11 @@
     </nav>
 
     <!-- Playlists -->
-    <section id="playlists" class="container my-5">
+    <section class="container my-5">
       <div class="playlist-header text-center mb-5">
         <h2 class="display-4 mb-3">Viajes Musicales</h2>
-        <p class="lead">Cada playlist es un viaje único a través de las emociones y el alma, nuestro lenguaje universal. Encuentra la melodía perfecta para
+        <p class="lead">Cada playlist es un viaje único a través de las emociones y el alma, nuestro lenguaje universal.
+          Encuentra la melodía perfecta para
           cada momento de tu vida.</p>
       </div>
 
@@ -58,8 +60,9 @@
                 <i class="bi bi-hourglass-split text-primary"></i>
               </div>
               <h5 class="card-title">Nostalgia y Recuerdos</h5>
-              <p class="card-text flex-grow-1">Melodías que te transportarán a momentos especiales, donde cada nota es
-                un recuerdo que vuelve a cobrar vida.</p>
+              <p class="card-text flex-grow-1">Canciones que nos llevan de regreso a momentos inolvidables, despertando
+                emociones dormidas y evocando sensaciones de melancolía y calidez. Sonidos que abrazan el alma y nos
+                recuerdan que hemos vivido en cada melodía.</p>
               <div class="playlist-stats mb-3">
                 <span class="badge bg-light text-dark me-2">
                   <i class="bi bi-music-note"></i> 25 canciones
@@ -85,7 +88,9 @@
               </div>
               <h5 class="card-title">Para Relajarse y Desconectar</h5>
               <p class="card-text flex-grow-1">Un oasis sonoro para encontrar la paz interior y dejar que la música te
-                lleve a un estado de serenidad total.</p>
+                lleve a un estado de serenidad total. Ondas sonoras que fluyen como el agua y envuelven el alma en un
+                estado de serenidad. Canciones etéreas y envolventes que crean un espacio fuera del tiempo, donde la
+                mente se expande y el espíritu encuentra calma.</p>
               <div class="playlist-stats mb-3">
                 <span class="badge bg-light text-dark me-2">
                   <i class="bi bi-music-note"></i> 30 canciones
@@ -111,7 +116,9 @@
               </div>
               <h5 class="card-title">Amor</h5>
               <p class="card-text flex-grow-1">Canciones que hablan el lenguaje universal del amor, perfectas para esos
-                momentos donde las palabras no son suficientes.</p>
+                momentos donde las palabras no son suficientes. Melodías hipnóticas y voces que susurran sentimientos
+                profundos, transportando el alma a un estado de conexión pura con la esencia del amor en todas sus
+                formas.</p>
               <div class="playlist-stats mb-3">
                 <span class="badge bg-light text-dark me-2">
                   <i class="bi bi-music-note"></i> 20 canciones
@@ -136,8 +143,9 @@
                 <i class="bi bi-stars text-info"></i>
               </div>
               <h5 class="card-title">Superación y Esperanza</h5>
-              <p class="card-text flex-grow-1">Canciones que hablan el lenguaje universal del amor, perfectas para esos
-                momentos donde las palabras no son suficientes.</p>
+              <p class="card-text flex-grow-1">Una selección de canciones que nos recuerdan que, incluso en los momentos
+                más difíciles, siempre hay una luz al final del camino. Melodías que inspiran, letras que transmiten
+                fortaleza y emociones que nos impulsan a seguir adelante con fe en el futuro.</p>
               <div class="playlist-stats mb-3">
                 <span class="badge bg-light text-dark me-2">
                   <i class="bi bi-music-note"></i> 20 canciones
@@ -162,11 +170,12 @@
                 <i class="bi bi-music-note-list text-dark"></i>
               </div>
               <h5 class="card-title">Conexión Espiritual</h5>
-              <p class="card-text flex-grow-1">Canciones que hablan el lenguaje universal del amor, perfectas para esos
-                momentos donde las palabras no son suficientes.</p>
+              <p class="card-text flex-grow-1">Música que invita a la introspección, a sumergirse en el alma y a sentir
+                la energía que nos une con el universo. Sonidos envolventes y letras profundas que nos llevan a un viaje
+                interior, donde las emociones fluyen y la mente encuentra paz.</p>
               <div class="playlist-stats mb-3">
                 <span class="badge bg-light text-dark me-2">
-                  <i class="bi bi-music-note"></i> Indefinido 
+                  <i class="bi bi-music-note"></i> Indefinido
                 </span>
                 <span class="badge bg-light text-dark">
                   <i class="bi bi-clock"></i> 1h 30min
@@ -188,8 +197,9 @@
                 <i class="bi bi-rocket-takeoff-fill text-info"></i>
               </div>
               <h5 class="card-title">Cerati Para Volar</h5>
-              <p class="card-text flex-grow-1">Canciones que hablan el lenguaje universal del amor, perfectas para esos
-                momentos donde las palabras no son suficientes.</p>
+              <p class="card-text flex-grow-1">Un recorrido sonoro por las canciones más etéreas y atmosféricas de
+                Gustavo Cerati, perfectas para desconectarse del mundo y dejarse llevar por la música. Arreglos
+                hipnóticos, letras evocadoras y una sensación de ingravidez que transporta a otros planos.</p>
               <div class="playlist-stats mb-3">
                 <span class="badge bg-light text-dark me-2">
                   <i class="bi bi-music-note"></i> 13 canciones
@@ -210,32 +220,36 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer bg-dark text-light py-4 mt-5">
+    <footer class="footer py-4 mt-5">
       <div class="container">
         <div class="row g-4">
           <!-- Columna de redes sociales -->
           <div class="col-md-4">
-            <h5 class="mb-3">Sígueme</h5>
+            <h5 class="text-black mb-3">Sígueme</h5>
             <div class="social-links">
-              <a href="https://github.com/Frann1411" target="_blank" class="text-light me-3"><i class="bi bi-github fs-4"></i></a>
-              <a href="https://www.instagram.com/frann14.11?igsh=MWNpeHpvYTNza2E0MA==" target="_blank" class="text-light me-3"><i class="bi bi-instagram fs-4"></i></a>
-              <a href="https://x.com/Frann1411" target="_blank" class="text-light me-3"><i class="bi bi-twitter fs-4"></i></a>
-              <a href="https://www.youtube.com/@franklingonzalez1224" target="_blank" class="text-light me-3"><i class="bi bi-youtube fs-4"></i></a>
+              <a href="https://github.com/Frann1411" target="_blank" class="text-dark me-3"><i
+                  class="bi bi-github fs-4"></i></a>
+              <a href="https://www.instagram.com/frann14.11?igsh=MWNpeHpvYTNza2E0MA==" target="_blank"
+                class="text-dark me-3"><i class="bi bi-instagram fs-4"></i></a>
+              <a href="https://x.com/Frann1411" target="_blank" class="text-dark me-3"><i
+                  class="bi bi-twitter fs-4"></i></a>
+              <a href="https://www.youtube.com/@franklingonzalez1224" target="_blank" class="text-dark me-3"><i
+                  class="bi bi-youtube fs-4"></i></a>
             </div>
           </div>
 
           <!-- Columna de contacto -->
           <div class="col-md-4">
-            <h5 class="mb-3">Contacto</h5>
-            <p><i class="bi bi-envelope-fill me-2"></i> frann2022gonzalez@gmail.com </p>
-            <p><i class="bi bi-geo-alt-fill me-2"></i> El Salvador </p>
+            <h5 class="text-center text-black mb-3">Contacto</h5>
+            <p class="text-black"><i class="bi bi-envelope-fill text-black me-2"></i> frann2022gonzalez@gmail.com </p>
+            <p class="text-black"><i class="bi bi-geo-alt-fill text-black me-2"></i> El Salvador </p>
           </div>
         </div>
         <!-- Derechos de autor -->
         <div class="row mt-4">
           <div class="col-12">
             <hr class="bg-light">
-            <p class="text-center mb-0">
+            <p class="text-center text-black mb-0">
               © 2025 Música y Emociones. Todos los derechos reservados.
             </p>
           </div>
@@ -245,6 +259,7 @@
 
     <!-- Scripts -->
     <script src="scripts.js"></script>
+    <script src="dark.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
   </body>
