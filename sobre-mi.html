@@ -10,13 +10,13 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 
-<main id="main-content">
+<body data-bs-theme="light">
+  <main id="main-content">
 
-  <body data-bs-theme="light">
-
-    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
       <div class="container-fluid">
-        <button onclick="cambiarTema()" class=" btn rounded-fill"><i id="d1-icon" class="bi bi-moon-fill"></i></button>
+        <button onclick="cambiarTema()" class="btn theme-toggle rounded-fill" aria-label="Cambiar tema"><i id="d1-icon"
+            class="bi bi-moon-fill"></i></button>
         <a class="navbar-brand" href="index.html">Música y Emociones</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span class="navbar-toggler-icon"></span>
@@ -26,9 +26,9 @@
             <li class="nav-item">
               <a class="nav-link" href="index.html">Inicio</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="sobre-mi.html">Sobre mí</a>
-            </li>
+             <li class="nav-item">
+               <a class="nav-link active" href="sobre-mi.html">Sobre mí</a>
+             </li>
             <li class="nav-item">
               <a class="nav-link" href="artistas.html">Artistas</a>
             </li>
@@ -44,7 +44,7 @@
     </nav>
 
     <!-- Sobre mí -->
-    <section id="sobre-mi" class="container my-5 py-5">
+    <section id="sobre-mi" class="container my-5 py-5 section-padding">
       <div class="row align-items-center">
         <div class="col-md-6">
           <div class="about-content p-4">
@@ -79,7 +79,7 @@
         </div>
         <div class="col-md-6">
           <div class="about-image p-4 text-center position-relative">
-            <img src="Images/frann.png" alt="Frann" class="img-fluid rounded-circle shadow-lg profile-img">
+            <img src="Images/perfil1.jpeg" alt="Frann" class="img-fluid rounded-circle shadow-lg profile-img">
             <div class="floating-music-note note-1">🎵</div>
             <div class="floating-music-note note-2">🎼</div>
             <div class="floating-music-note note-3">🎹</div>
@@ -94,31 +94,37 @@
         <div class="row g-4">
           <!-- Columna de redes sociales -->
           <div class="col-md-4">
-            <h5 class="text-black mb-3">Sígueme</h5>
+            <h5 class="mb-3">Sígueme</h5>
             <div class="social-links">
-              <a href="https://github.com/Frann-Avila1411" target="_blank" class="text-dark me-3"><i
+              <a href="https://github.com/Frann-Avila1411" target="_blank" class="me-3"><i
                   class="bi bi-github fs-4"></i></a>
-              <a href="https://www.instagram.com/frann14.11?igsh=MWNpeHpvYTNza2E0MA==" target="_blank"
-                class="text-dark me-3"><i class="bi bi-instagram fs-4"></i></a>
-              <a href="https://x.com/Frann1411" target="_blank" class="text-dark me-3"><i
-                  class="bi bi-twitter fs-4"></i></a>
-              <a href="https://www.youtube.com/@franklingonzalez1224" target="_blank" class="text-dark me-3"><i
+              <a href="https://www.instagram.com/frann14.11?igsh=MWNpeHpvYTNza2E0MA==" target="_blank" class="me-3"><i
+                  class="bi bi-instagram fs-4"></i></a>
+              <a href="https://x.com/Frann1411" target="_blank" class="me-3"><i class="bi bi-twitter fs-4"></i></a>
+              <a href="https://www.youtube.com/@franklingonzalez1224" target="_blank" class="me-3"><i
                   class="bi bi-youtube fs-4"></i></a>
             </div>
           </div>
 
-          <!-- Columna de contacto -->
-          <div class="col-md-4">
-            <h5 class="text-center text-black mb-3">Contacto</h5>
-            <p class="text-black"><i class="bi bi-envelope-fill text-black me-2"></i> frann2022gonzalez@gmail.com </p>
-            <p class="text-black"><i class="bi bi-geo-alt-fill text-black me-2"></i> El Salvador </p>
+          <!-- Columna de crédito / portafolio -->
+          <div class="col-md-4 text-center">
+            <h5 class="mb-3">Desarrollado por</h5>
+            <p class="mb-1">Frann Avila</p>
+            <a href="https://avila-frann-dev.vercel.app/" target="_blank" class="footer-link">Ver portafolio</a>
+          </div>
+
+          <!-- Columna de contacto (derecha en desktop) -->
+          <div class="col-md-4 text-md-end">
+            <h5 class="mb-3">Contacto</h5>
+            <p><i class="bi bi-envelope-fill me-2"></i> frann2022gonzalez@gmail.com </p>
+            <p><i class="bi bi-geo-alt-fill me-2"></i> El Salvador </p>
           </div>
         </div>
         <!-- Derechos de autor -->
         <div class="row mt-4">
           <div class="col-12">
             <hr class="bg-light">
-            <p class="text-center text-black mb-0">
+            <p class="text-center mb-0">
               © 2025 Música y Emociones. Todos los derechos reservados.
             </p>
           </div>
@@ -131,7 +137,7 @@
     <script src="dark.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-  </body>
-</main>
+  </main>
+</body>
 
 </html>
