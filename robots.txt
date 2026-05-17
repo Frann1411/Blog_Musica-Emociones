@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://musica-y-emociones.netlify.app/sitemap.xml
