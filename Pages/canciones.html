@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="es" class="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/Images/ondas-sonoras.png">
+    <title>Canciones | Música y Emociones</title>
+    <meta name="description" content="Canciones que dejaron huella por su letra, su historia y la emoción que transmiten en cada escucha.">
+    <meta name="keywords" content="canciones emocionales, canciones para escuchar, rock en español, música y recuerdos">
+    <meta name="author" content="Frann Avila">
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:title" content="Canciones | Música y Emociones">
+    <meta property="og:description" content="Una colección de canciones cargadas de historia, memoria y sensibilidad emocional.">
+    <meta property="og:image" content="/Images/Portadas/Doble%20Vida.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Canciones | Música y Emociones">
+    <meta name="twitter:description" content="Canciones seleccionadas por su carga emocional y su historia personal.">
+    <!-- Tailwind CSS compilado -->
+    <link rel="stylesheet" href="/dist/output.css">
+    <!-- Tailwind CSS (compilado desde styles.css) -->
+    <link rel="stylesheet" href="/Styles/styles.css">
+    <script>
+        (function () {
+            try {
+                fetch('/Images/icons.svg')
+                    .then(r => r.text())
+                    .then(svg => {
+                        const insert = () => document.body.insertAdjacentHTML('afterbegin', svg);
+                        if (document.body) insert(); else document.addEventListener('DOMContentLoaded', insert);
+                    });
+            } catch (e) { }
+        })();
+    </script>
+</head>
+
+<body class="">
+    <main id="main-content">
+        <!-- Contenedor para navbar dinámico -->
+        <div id="navbar-container"></div>
+        <!-- Canciones: masonry layout -->
+        <section class="bg-primary-900 pt-16 md:pt-12 pb-12 px-4">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-3xl mx-auto text-center mb-10 md:mb-14">
+                    <p
+                        class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/8 border border-white/10 text-xs font-bold uppercase tracking-[0.22em] text-primary-200 mb-5">
+                        Melodías que hablan al alma
+                    </p>
+                    <h1 class="text-3xl md:text-5xl font-heading font-bold mb-4 text-primary-50">Canciones</h1>
+                    <p class="text-sm md:text-base text-primary-200 leading-relaxed">
+                        Canciones que han dejado una marca profunda en mi vida, cada una con su propia historia y
+                        emoción. El mensaje de cada canción es una ventana a momentos, sentimientos y reflexiones que
+                        han resonado conmigo a lo largo del tiempo. Desde la euforia hasta la melancolía más
+                        suave, estas canciones son un reflejo de las emociones humanas en su forma más pura. Cada una de
+                        ellas es un viaje que invita a escuchar con el corazón abierto y a descubrir las historias que
+                        se esconden detrás de cada nota y cada palabra.
+                    </p>
+                </div>
+
+                <div id="songs-grid" class="songs-masonry-grid">
+
+                    <!-- Corazón Delator -->
+                    <article class="song-card" data-emotion="pasion">
+                        <div class="song-image">
+                            <img src="/Images/Portadas/Doble Vida.webp" alt="Corazón Delator" decoding="async"
+                                loading="lazy">
+                        </div>
+                        <div class="p-5">
+                            <div class="song-meta">
+                                <span class="song-emotion-badge">Vulnerabilidad, Confesión</span>
+                                <span class="song-duration">5:13</span>
+                            </div>
+                            <h3 class="text-lg font-heading font-bold text-primary-100 mb-1">"Corazón Delator"</h3>
+                            <p class="text-sm text-primary-100 mb-2">Soda Stereo • Doble Vida (1988)</p>
+                            <p class="text-sm text-primary-100 leading-relaxed mb-2">“Corazón Delator” es una de las
+                                piezas más introspectivas de Soda Stereo. La letra expone la fragilidad de los
+                                sentimientos cuando el corazón se convierte en un delator de lo que intentamos ocultar.
+                                Cerati utiliza imágenes poéticas para hablar de la imposibilidad de disimular el amor o
+                                el dolor: el cuerpo y las emociones terminan revelando lo que la razón intenta callar.
+                                Musicalmente, la atmósfera es envolvente y oscura, con un crescendo que intensifica la
+                                sensación de desgarro emocional. Es un tema que mezcla confesión y misterio, donde la
+                                vulnerabilidad se convierte en belleza.</p>
+                            <div class="song-quote">"Hay algo oculto en cada sensación."</div>
+                            <a href="https://youtu.be/FRT0AfPt5d8?si=9Eyzm9YVZZ08gLyR" target="_blank"
+                                class="song-listen-btn">
+                                <svg class="w-4 h-4">
+                                    <use href="#play"></use>
+                                </svg>
+                                Escuchar
+                            </a>
+                            <div class="song-visualizer">
+                                <div class="visualizer-bar"></div>
+                                <div class="visualizer-bar"></div>
+                                <div class="visualizer-bar"></div>
+                                <div class="visualizer-bar"></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Landslide -->
+                    <article class="song-card" data-emotion="nostalgia">
+                        <div class="song-image">
+                            <img src="/Images/Portadas/Fleetwood Mac.webp" alt="Landslide" decoding="async"
+                                loading="lazy">
+                        </div>
+                        <div class="p-5">
+                            <div class="song-meta">
+                                <span class="song-emotion-badge">Nostalgia</span>
+                                <span class="song-duration">3:21</span>
+                            </div>
+                            <h3 class="text-lg font-heading font-bold text-primary-100 mb-1">"Landslide"</h3>
+                            <p class="text-sm text-primary-100 mb-2">Fleetwood Mac • Fleetwood (1975)</p>
+                            <p class="text-sm text-primary-100 leading-relaxed mb-2">“Landslide” es una confesión íntima
+                                de Stevie Nicks sobre el miedo al cambio y la fragilidad de la vida. La metáfora del
+                                alud representa esos momentos en que todo se transforma de golpe, arrastrando certezas y
+                                obligando a enfrentar la vulnerabilidad. La guitarra acústica crea un ambiente delicado
+                                y contemplativo, como si cada acorde fuera un suspiro. Es una canción que habla de
+                                crecer, de aceptar la impermanencia y de encontrar belleza en la incertidumbre.</p>
+                            <div class="song-quote">“Well, I’ve been afraid of changing…”</div>
+                            <a href="https://youtu.be/k4M53xndqiU?si=2nq8r733nNIBTZbr" target="_blank"
+                                class="song-listen-btn">
+                                <svg class="w-4 h-4">
+                                    <use href="#play"></use>
+                                </svg>
+                                Escuchar
+                            </a>
+                            <div class="song-visualizer">
+                                <div class="visualizer-bar"></div>
+                                <div class="visualizer-bar"></div>
+                                <div class="visualizer-bar"></div>
+                                <div class="visualizer-bar"></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Slipping Through My Fingers -->
+                    <article class="song-card" data-emotion="nostalgia">
+                        <div class="song-image">
+                            <img src="/Images/Portadas/The Visitors.webp" alt="Slipping Through My Fingers"
+                                decoding="async" loading="lazy">
+                        </div>
+                        <div class="p-5">
+                            <div class="song-meta">
+                                <span class="song-emotion-badge">Melancolía suave</span>
+                                <span class="song-duration">3:56</span>
+                            </div>
+                            <h3 class="text-lg font-heading font-bold text-primary-100 mb-1">"Slipping Through My
+                                Fingers"</h3>
+                            <p class="text-sm text-primary-100 mb-2">ABBA • The Visitors (1981)</p>
+                            <p class="text-sm text-primary-100 leading-relaxed mb-2">Este tema refleja la sensación de
+                                ver cómo los momentos con un ser querido —en mi caso mis dos hermanas— se escapan como
+                                arena
+                                entre los dedos. La letra transmite la impotencia de no poder detener el tiempo y la
+                                nostalgia de lo que ya no volverá. Musicalmente, la melodía es cálida y envolvente, pero
+                                cargada de una tristeza serena. Es un retrato de la fugacidad de la vida cotidiana y del
+                                amor que se vive en instantes que parecen demasiado breves.</p>
+                            <div class="song-quote">“Slipping through my fingers all the time…”</div>
+                            <a href="https://youtu.be/hRr7qRb-7k4?si=WgMn2DlLXlRdVeUJ" target="_blank"
+                                class="song-listen-btn">
+                                <svg class="w-4 h-4">
+                                    <use href="#play"></use>
+                                </svg>
+                                Escuchar
+                            </a>
+                            <div class="song-visualizer">
+                                <div class="visualizer-bar"></div>
+                                <div class="visualizer-bar"></div>
+                                <div class="visualizer-bar"></div>
+                                <div class="visualizer-bar"></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- I Was Born To Love You -->
+                    <article class="song-card" data-emotion="pasion">
+                        <div class="song-image">
+                            <img src="/Images/Portadas/Mr. Bad Guy.webp" alt="I Was Born To Love You" decoding="async"
+                                loading="lazy">
+                        </div>
+                        <div class="p-5">
+                            <div class="song-meta">
+                                <span class="song-emotion-badge">Entrega Absoluta</span>
+                                <span class="song-duration">3:39</span>
+                            </div>
+                            <h3 class="text-lg font-heading font-bold text-primary-100 mb-1">"I Was Born To Love You"
+                            </h3>
+                            <p class="text-sm text-primary-100 mb-2">Freddie Mercury • Mr. Bad Guy (1985)</p>
+                            <p class="text-sm text-primary-100 leading-relaxed mb-2">Freddie Mercury convierte esta
+                                declaración en un himno de amor desbordante. La canción vibra con energía y teatralidad,
+                                mostrando la intensidad con la que él concebía el amor: como destino, como fuerza vital.
+                                La producción es exuberante, con un ritmo que transmite euforia y celebración. En un
+                                sentido más simbólico, es casi una afirmación de existencia: nacer para amar es nacer
+                                para vivir plenamente, sin reservas.</p>
+                            <div class="song-quote">“I was born to love you…”</div>
+                            <a href="https://youtu.be/rtDTPZkUBpc?si=STiforopYq4_ahqV" target="_blank"
+                                class="song-listen-btn">
+                                <svg class="w-4 h-4">
+                                    <use href="#play"></use>
+                                </svg>
+                                Escuchar
+                            </a>
+                            <div class="song-visualizer">
+                                <div class="visualizer-bar"></div>
+                                <div class="visualizer-bar"></div>
+                                <div class="visualizer-bar"></div>
+                                <div class="visualizer-bar"></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Los Libros de la Buena Memoria -->
+                    <article class="song-card" data-emotion="introspecccion">
+                        <div class="song-image">
+                            <img src="/Images/Portadas/El Jardin de los Presentes.webp"
+                                alt="Los Libros de la Buena Memoria" decoding="async" loading="lazy">
+                        </div>
+                        <div class="p-5">
+                            <div class="song-meta">
+                                <span class="song-emotion-badge">Introspección, Espiritualidad</span>
+                                <span class="song-duration">5:11</span>
+                            </div>
+                            <h3 class="text-lg font-heading font-bold text-primary-100 mb-1">"Los Libros de la Buena
+                                Memoria"</h3>
+                            <p class="text-sm text-primary-100 mb-2">Invisible • El Jardín de los Presentes (1976)</p>
+                            <p class="text-sm text-primary-100 leading-relaxed mb-2">Spinetta convierte esta obra en un
+                                viaje hacia la memoria como un espacio sagrado. Los “libros” son metáforas de la vida
+                                escrita en silencio, de las huellas invisibles que guardan lo que somos. La atmósfera
+                                musical es contemplativa, con un aire de ritual, como si cada acorde abriera páginas de
+                                un libro ancestral. Es una canción que invita a mirar hacia adentro, a reconocer que la
+                                memoria es también alquimia: transforma lo vivido en sabiduría.</p>
+                            <div class="song-quote">"¿No volverías a triunfar en tu alma?"</div>
+                            <a href="https://youtu.be/HPcgbOHkEfk?si=ifHWxB5u4h8raFgH" target="_blank"
+                                class="song-listen-btn">
+                                <svg class="w-4 h-4">
+                                    <use href="#play"></use>
+                                </svg>
+                                Escuchar
+                            </a>
+                            <div class="song-visualizer">
+                                <div class="visualizer-bar"></div>
+                                <div class="visualizer-bar"></div>
+                                <div class="visualizer-bar"></div>
+                                <div class="visualizer-bar"></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Rio Babel -->
+                    <article class="song-card" data-emotion="introspecccion">
+                        <div class="song-image">
+                            <img src="/Images/Portadas/Bocanada.webp" alt="Rio Babel" decoding="async" loading="lazy">
+                        </div>
+                        <div class="p-5">
+                            <div class="song-meta">
+                                <span class="song-emotion-badge">Contemplación</span>
+                                <span class="song-duration">4:45</span>
+                            </div>
+                            <h3 class="text-lg font-heading font-bold text-primary-100 mb-1">"Rio Babel"</h3>
+                            <p class="text-sm text-primary-100 mb-2">Gustavo Cerati • Bocanada (1999)</p>
+                            <p class="text-sm text-primary-100 leading-relaxed mb-2">“Río Babel” es un río de lenguajes,
+                                de voces que se entrecruzan y se disuelven en la corriente. Cerati evoca la confusión y
+                                la belleza de la comunicación humana, donde las palabras se mezclan como aguas que nunca
+                                se detienen. El tono es hipnótico, con un pulso electrónico que sugiere un viaje sin
+                                fin. En clave simbólica, es un canto a la multiplicidad: la vida como un río de
+                                significados que nunca se agotan.</p>
+                            <div class="song-quote">"Fluir sin un fin..."</div>
+                            <a href="https://youtu.be/ZJhd9SeBD2I?si=oGvhu6QrUPVafVr6" target="_blank"
+                                class="song-listen-btn">
+                                <svg class="w-4 h-4">
+                                    <use href="#play"></use>
+                                </svg>
+                                Escuchar
+                            </a>
+                            <div class="song-visualizer">
+                                <div class="visualizer-bar"></div>
+                                <div class="visualizer-bar"></div>
+                                <div class="visualizer-bar"></div>
+                                <div class="visualizer-bar"></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Barro Tal Vez -->
+                    <article class="song-card" data-emotion="melancolia">
+                        <div class="song-image">
+                            <img src="/Images/Portadas/Kamikaze.webp" alt="Barro Tal Vez" decoding="async"
+                                loading="lazy">
+                        </div>
+                        <div class="p-5">
+                            <div class="song-meta">
+                                <span class="song-emotion-badge">Fragilidad, trascendencia</span>
+                                <span class="song-duration">3:20</span>
+                            </div>
+                            <h3 class="text-lg font-heading font-bold text-primary-100 mb-1">"Barro Tal Vez"</h3>
+                            <p class="text-sm text-primary-100 mb-2">Luis Alberto Spinetta • Kamikaze (1982)</p>
+                            <p class="text-sm text-primary-100 leading-relaxed mb-2">“Barro Tal Vez” es una plegaria
+                                hecha canción. Spinetta se reconoce como barro, materia frágil, pero también como
+                                posibilidad de ser moldeado por el tiempo y el espíritu. La letra es profundamente
+                                mística: habla de la humildad de existir y del deseo de dejar una huella, aunque
+                                efímera. La melodía desnuda, casi quebrada, refuerza la sensación de vulnerabilidad. Es
+                                una obra que se siente como un rezo, donde lo humano se funde con lo eterno.</p>
+                            <div class="song-quote">"Ya me estoy volviendo canción, barro tal vez..."</div>
+                            <a href="https://youtu.be/W47hOuQjDag?si=n4T38QryoZuiuOvk" target="_blank"
+                                class="song-listen-btn">
+                                <svg class="w-4 h-4">
+                                    <use href="#play"></use>
+                                </svg>
+                                Escuchar
+                            </a>
+                            <div class="song-visualizer">
+                                <div class="visualizer-bar"></div>
+                                <div class="visualizer-bar"></div>
+                                <div class="visualizer-bar"></div>
+                                <div class="visualizer-bar"></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Maybe It´s You -->
+                    <article class="song-card" data-emotion="esperanza">
+                        <div class="song-image">
+                            <img src="/Images/Portadas/Close To You.webp" alt="Maybe It´s You" decoding="async"
+                                loading="lazy">
+                        </div>
+                        <div class="p-5">
+                            <div class="song-meta">
+                                <span class="song-emotion-badge">Romanticismo</span>
+                                <span class="song-duration">2:54</span>
+                            </div>
+                            <h3 class="text-lg font-heading font-bold text-primary-100 mb-1">"Maybe It´s You"</h3>
+                            <p class="text-sm text-primary-100 mb-2">Carpenters • Close To You (1970)</p>
+                            <p class="text-sm text-primary-100 leading-relaxed mb-2">Una de las joyas más delicadas de
+                                los Carpenters, “Maybe It’s You” es un susurro de amor que se descubre en lo cotidiano.
+                                La voz de Karen Carpenter transmite ternura y calma, como si el amor fuera un refugio
+                                silencioso. La canción celebra la belleza de lo simple: un paseo, una mirada, un
+                                instante compartido. En un sentido más poético, es la revelación de que lo divino puede
+                                habitar en lo humano, en los gestos más pequeños.</p>
+                            <div class="song-quote">"Maybe it's you who brought the caring I forgot"</div>
+                            <a href="https://youtu.be/Mjl2kbLBypE?si=USEuTKm6whqKZVXy" target="_blank"
+                                class="song-listen-btn">
+                                <svg class="w-4 h-4">
+                                    <use href="#play"></use>
+                                </svg>
+                                Escuchar
+                            </a>
+                            <div class="song-visualizer">
+                                <div class="visualizer-bar"></div>
+                                <div class="visualizer-bar"></div>
+                                <div class="visualizer-bar"></div>
+                                <div class="visualizer-bar"></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- While My Guitar Gently Weeps -->
+                    <article class="song-card" data-emotion="pasion">
+                        <div class="song-image">
+                            <img src="/Images/Portadas/TheWhiteAlbum.webp" alt="While My Guitar Gently Weeps"
+                                decoding="async" loading="lazy">
+                        </div>
+                        <div class="p-5">
+                            <div class="song-meta">
+                                <span class="song-emotion-badge">Contemplación, Trascendencia</span>
+                                <span class="song-duration">4:46</span>
+                            </div>
+                            <h3 class="text-lg font-heading font-bold text-primary-100 mb-1">"While My Guitar Gently
+                                Weeps"</h3>
+                            <p class="text-sm text-primary-100 mb-2">The Beatles • The White Album (1968)</p>
+                            <p class="text-sm text-primary-100 leading-relaxed mb-2">George Harrison convierte la
+                                guitarra en un instrumento que llora, revelando la fragilidad del mundo y la incapacidad
+                                humana de reconocer la belleza y el amor. La canción es un lamento espiritual: cada nota
+                                es una lágrima que cae sobre la tierra. En clave mística, es casi una plegaria: la
+                                guitarra se convierte en voz del alma, denunciando la indiferencia y buscando redención
+                                en la música.</p>
+                            <div class="song-quote">"See the love there that´s sleeping."</div>
+                            <a href="https://youtu.be/zOKGcEfSwnY?si=ojGK2tOBRDHSZVuP" target="_blank"
+                                class="song-listen-btn">
+                                <svg class="w-4 h-4">
+                                    <use href="#play"></use>
+                                </svg>
+                                Escuchar
+                            </a>
+                            <div class="song-visualizer">
+                                <div class="visualizer-bar"></div>
+                                <div class="visualizer-bar"></div>
+                                <div class="visualizer-bar"></div>
+                                <div class="visualizer-bar"></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!--I’m Not in Love -->
+                    <article class="song-card" data-emotion="pasion">
+                        <div class="song-image">
+                            <img src="/Images/Portadas/goodtobebad.webp" alt="I’m Not in Love" decoding="async"
+                                loading="lazy">
+                        </div>
+                        <div class="p-5">
+                            <div class="song-meta">
+                                <span class="song-emotion-badge">Melancolía, Vulnerabilidad</span>
+                                <span class="song-duration">3:45</span>
+                            </div>
+                            <h3 class="text-lg font-heading font-bold text-primary-100 mb-1">"I’m Not in Love"</h3>
+                            <p class="text-sm text-primary-100 mb-2">10cc • The Original Soundtrack (1975)</p>
+                            <p class="text-sm text-primary-100 leading-relaxed mb-2">"Este tema es un retrato de la
+                                negación afectiva. La voz insiste en
+                                que “no está enamorado”, pero la atmósfera etérea y los coros infinitos revelan lo
+                                contrario: un amor reprimido y oculto. La producción, con capas de voces y
+                                sintetizadores, crea un espacio onírico que refleja la contradicción entre lo que se
+                                dice y lo que se siente. Es una confesión disfrazada de negación."</p>
+                            <div class="song-quote">"I keep your picture..."</div>
+                            <a href="https://youtu.be/STugQ0X1NoI?si=tQ6Z0LG528E9D3wg" target="_blank"
+                                class="song-listen-btn">
+                                <svg class="w-4 h-4">
+                                    <use href="#play"></use>
+                                </svg>
+                                Escuchar
+                            </a>
+                            <div class="song-visualizer">
+                                <div class="visualizer-bar"></div>
+                                <div class="visualizer-bar"></div>
+                                <div class="visualizer-bar"></div>
+                                <div class="visualizer-bar"></div>
+                            </div>
+                        </div>
+                    </article>
+                    </article>
+
+                    <!-- Resguardum Ether -->
+                    <article class="song-card" data-emotion="introspecccion">
+                        <div class="song-image">
+                            <img src="/Images/Portadas/Solstis.webp" alt="Resguardum Ether" decoding="async"
+                                loading="lazy">
+                        </div>
+                        <div class="p-5">
+                            <div class="song-meta">
+                                <span class="song-emotion-badge">Misticismo, Contemplación</span>
+                                <span class="song-duration">4:40</span>
+                            </div>
+                            <h3 class="text-lg font-heading font-bold text-primary-100 mb-1">"Resguardum Ether"</h3>
+                            <p class="text-sm text-primary-100 mb-2">León Larregui • Solstis (2013)</p>
+                            <p class="text-sm text-primary-100 leading-relaxed mb-2">“Resguardum Ether” es un viaje
+                                espiritual hacia lo etéreo. Larregui invoca imágenes cósmicas, como si la canción fuera
+                                un mantra que protege y conecta con lo invisible. La atmósfera sonora es expansiva, con
+                                ecos que sugieren un espacio sagrado. En clave alquímica, es un conjuro: el éter como
+                                sustancia primordial que guarda la esencia del alma y la une con lo eterno.</p>
+                            <div class="song-quote">"Comimos relámpagos, diáfanos, bebimos truenos..."</div>
+                            <a href="https://youtu.be/bqlkB2DyCQs?si=xQDvZ725brGajaTj" target="_blank"
+                                class="song-listen-btn">
+                                <svg class="w-4 h-4">
+                                    <use href="#play"></use>
+                                </svg>
+                                Escuchar
+                            </a>
+                            <div class="song-visualizer">
+                                <div class="visualizer-bar"></div>
+                                <div class="visualizer-bar"></div>
+                                <div class="visualizer-bar"></div>
+                                <div class="visualizer-bar"></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Tu Amor -->
+                    <article class="song-card" data-emotion="pasion">
+                        <div class="song-image">
+                            <img src="/Images/Portadas/Tango 4.webp" alt="Tu Amor" decoding="async" loading="lazy">
+                        </div>
+                        <div class="p-5">
+                            <div class="song-meta">
+                                <span class="song-emotion-badge">Complicidad</span>
+                                <span class="song-duration">3:09</span>
+                            </div>
+                            <h3 class="text-lg font-heading font-bold text-primary-100 mb-1">"Tu Amor"</h3>
+                            <p class="text-sm text-primary-100 mb-2">Charly García • Tango 4 (1991)</p>
+                            <p class="text-sm text-primary-100 leading-relaxed mb-2">“Tu amor” es un canto íntimo a la
+                                complicidad y la entrega. La voz de García y Aznar se entrelaza en armonía,
+                                transmitiendo cercanía y vulnerabilidad. La letra celebra el amor como refugio, como
+                                fuerza que sostiene en medio de la incertidumbre. Musicalmente, es delicada y emotiva,
+                                con un aire de confesión compartida. Es un himno a la unión sincera.</p>
+                            <div class="song-quote">"No voy a esperar que el destino hablé por mí..."</div>
+                            <a href="https://youtu.be/E-B58va_xxs?si=V3IvtuAeM54oZTxy" target="_blank"
+                                class="song-listen-btn">
+                                <svg class="w-4 h-4">
+                                    <use href="#play"></use>
+                                </svg>
+                                Escuchar
+                            </a>
+                            <div class="song-visualizer">
+                                <div class="visualizer-bar"></div>
+                                <div class="visualizer-bar"></div>
+                                <div class="visualizer-bar"></div>
+                                <div class="visualizer-bar"></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- A Merced -->
+                    <article class="song-card" data-emotion="esperanza">
+                        <div class="song-image">
+                            <img src="/Images/Portadas/Amor Amarillo.webp" alt="A Merced" decoding="async"
+                                loading="lazy">
+                        </div>
+                        <div class="p-5">
+                            <div class="song-meta">
+                                <span class="song-emotion-badge">Amor, Introspección</span>
+                                <span class="song-duration">6:31</span>
+                            </div>
+                            <h3 class="text-lg font-heading font-bold text-primary-100 mb-1">"A Merced"</h3>
+                            <p class="text-sm text-primary-100 mb-2">Gustavo Cerati • Amor Amarillo (1993)</p>
+                            <p class="text-sm text-primary-100 leading-relaxed mb-2">“A merced” es una confesión de
+                                entrega y vulnerabilidad. Cerati se reconoce expuesto, a merced de las emociones y del
+                                tiempo. La atmósfera electrónica y melódica refuerza la sensación de fluir sin control,
+                                como si la vida fuera un río que arrastra. En clave simbólica, es un canto a la
+                                aceptación: estar a merced es también confiar en lo que viene.</p>
+                            <div class="song-quote">"Atado a tu belleza inconsciente"</div>
+                            <a href="https://youtu.be/kgoRYKVwKQ4?si=kx1T9JqNJzOwSDdL" target="_blank"
+                                class="song-listen-btn">
+                                <svg class="w-4 h-4">
+                                    <use href="#play"></use>
+                                </svg>
+                                Escuchar
+                            </a>
+                            <div class="song-visualizer">
+                                <div class="visualizer-bar"></div>
+                                <div class="visualizer-bar"></div>
+                                <div class="visualizer-bar"></div>
+                                <div class="visualizer-bar"></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Time After Time -->
+                    <article class="song-card" data-emotion="pasion">
+                        <div class="song-image">
+                            <img src="/Images/Portadas/Shes no Unusual.webp" alt="Time After Time" decoding="async"
+                                loading="lazy">
+                        </div>
+                        <div class="p-5">
+                            <div class="song-meta">
+                                <span class="song-emotion-badge">Nostalgia</span>
+                                <span class="song-duration">4:03</span>
+                            </div>
+                            <h3 class="text-lg font-heading font-bold text-primary-100 mb-1">"Time After Time"</h3>
+                            <p class="text-sm text-primary-100 mb-2">Cindy Lauper • She´s So Unusual, (1983)</p>
+                            <p class="text-sm text-primary-100 leading-relaxed mb-2">“Time After Time” es una promesa de
+                                compañía y fidelidad. La voz de Lauper transmite ternura y sinceridad, convirtiendo la
+                                canción en un refugio emocional. La melodía suave y envolvente refuerza la sensación de
+                                consuelo. Es un himno a la permanencia del amor y la amistad, a la certeza de que
+                                alguien estará allí una y otra vez, más allá del tiempo.</p>
+                            <div class="song-quote">"If you fall, I will catch you..."</div>
+                            <a href="https://youtu.be/F1mqrCTFoz4?si=FL0XWMkgME7gVfTg" target="_blank"
+                                class="song-listen-btn">
+                                <svg class="w-4 h-4">
+                                    <use href="#play"></use>
+                                </svg>
+                                Escuchar
+                            </a>
+                            <div class="song-visualizer">
+                                <div class="visualizer-bar"></div>
+                                <div class="visualizer-bar"></div>
+                                <div class="visualizer-bar"></div>
+                                <div class="visualizer-bar"></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Close To You -->
+                    <article class="song-card" data-emotion="esperanza">
+                        <div class="song-image">
+                            <img src="/Images/Portadas/Close To You.webp" alt="Close To You" decoding="async"
+                                loading="lazy">
+                        </div>
+                        <div class="p-5">
+                            <div class="song-meta">
+                                <span class="song-emotion-badge">Ternura, Romanticismo</span>
+                                <span class="song-duration">3:44</span>
+                            </div>
+                            <h3 class="text-lg font-heading font-bold text-primary-100 mb-1">"Close To You"</h3>
+                            <p class="text-sm text-primary-100 mb-2">Carpenters • Close To You (1970)</p>
+                            <p class="text-sm text-primary-100 leading-relaxed mb-2">Una de las piezas más icónicas de
+                                los Carpenters, “Close to You” es un canto delicado al amor idealizado. La voz de Karen
+                                Carpenter transmite una ternura casi celestial, como si el amor fuera un regalo divino
+                                que ilumina la vida cotidiana. La melodía suave y envolvente refuerza la sensación de
+                                dulzura y calma. Es una canción que convierte lo simple en trascendente: estar cerca de
+                                alguien amado se vuelve un milagro.</p>
+                            <div class="song-quote">"Just like me, they long to be, Close to You..."</div>
+                            <a href="https://youtu.be/HYnV_pkO-Rw?si=0_mIwzoqgkmLE2U8" target="_blank"
+                                class="song-listen-btn">
+                                <svg class="w-4 h-4">
+                                    <use href="#play"></use>
+                                </svg>
+                                Escuchar
+                            </a>
+                            <div class="song-visualizer">
+                                <div class="visualizer-bar"></div>
+                                <div class="visualizer-bar"></div>
+                                <div class="visualizer-bar"></div>
+                                <div class="visualizer-bar"></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- In this love -->
+                    <article class="song-card" data-emotion="esperanza">
+                        <div class="song-image">
+                            <img src="/Images/Portadas/goodtobebad.webp" alt="In this love" decoding="async"
+                                loading="lazy">
+                        </div>
+                        <div class="p-5">
+                            <div class="song-meta">
+                                <span class="song-emotion-badge">Entrega</span>
+                                <span class="song-duration">4:44</span>
+                            </div>
+                            <h3 class="text-lg font-heading font-bold text-primary-100 mb-1">"Is This Love"
+                            </h3>
+                            <p class="text-sm text-primary-100 mb-2">Whitesnake • Good To Be Bad(2008)</p>
+                            <p class="text-sm text-primary-100 leading-relaxed mb-2">“Is This Love” es una declaración
+                                de entrega absoluta. La voz poderosa de David Coverdale transmite intensidad y
+                                vulnerabilidad al mismo tiempo: amar es exponerse, es arriesgarse. La instrumentación
+                                rockera refuerza la fuerza del sentimiento, pero la letra revela la fragilidad que se
+                                esconde detrás de la pasión. Es un canto a la dualidad del amor: fuerza y debilidad,
+                                poder y rendición.</p>
+                            <div class="song-quote">"Is this love or am I dreaming..."</div>
+                            <a href="https://youtu.be/yziKcd4YAkU?si=6JSa6Y50HOnuSeex" target="_blank"
+                                class="song-listen-btn">
+                                <svg class="w-4 h-4">
+                                    <use href="#play"></use>
+                                </svg>
+                                Escuchar
+                            </a>
+                            <div class="song-visualizer">
+                                <div class="visualizer-bar"></div>
+                                <div class="visualizer-bar"></div>
+                                <div class="visualizer-bar"></div>
+                                <div class="visualizer-bar"></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Canción para mi muerte -->
+                    <article class="song-card" data-emotion="melancolia">
+                        <div class="song-image">
+                            <img src="/Images/Portadas/sui-generis.webp" alt="Cancion para mi muerte" decoding="async"
+                                loading="lazy">
+                        </div>
+                        <div class="p-5">
+                            <div class="song-meta">
+                                <span class="song-emotion-badge">Vulnerabilidad, Aceptación</span>
+                                <span class="song-duration">3:38</span>
+                            </div>
+                            <h3 class="text-lg font-heading font-bold text-primary-100 mb-2">"Canción para mi
+                                muerte"</h3>
+                            <p class="text-sm text-primary-100 mb-2">Sui Generis • Vida (1972)</p>
+                            <p class="text-sm text-primary-100 leading-relaxed mb-4">Esta obra de Charly García y Nito
+                                Mestre es una confesión existencial, un himno a la conciencia de lo efímero. La letra
+                                habla de la muerte no como derrota, sino como aceptación serena de la condición humana.
+                                En tono místico, es casi una plegaria: un canto que reconoce la fragilidad de la vida y
+                                la transforma en poesía. La melodía, sencilla y melancólica, refuerza la sensación de
+                                desnudez espiritual. Es un himno de trascendencia, donde la vulnerabilidad se convierte
+                                en sabiduría.</p>
+                            <div class="song-quote">"No es porque te tenga miedo, solo me quiero arreglar..."</div>
+                            <a href="https://youtu.be/1Zjm0uh8oeA?si=kRU7jNWndOTRvD_z" target="_blank"
+                                class="song-listen-btn">
+                                <svg class="w-4 h-4">
+                                    <use href="#play"></use>
+                                </svg>
+                                Escuchar
+                            </a>
+                            <div class="song-visualizer">
+                                <div class="visualizer-bar"></div>
+                                <div class="visualizer-bar"></div>
+                                <div class="visualizer-bar"></div>
+                                <div class="visualizer-bar"></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- We´ve Only Just Begun -->
+                    <article class="song-card" data-emotion="esperanza">
+                        <div class="song-image">
+                            <img src="/Images/Portadas/Close To You.webp" alt="We´ve Only Just Begun" decoding="async"
+                                loading="lazy">
+                        </div>
+                        <div class="p-5">
+                            <div class="song-meta">
+                                <span class="song-emotion-badge">Ternura, Romanticismo</span>
+                                <span class="song-duration">3:06</span>
+                            </div>
+                            <h3 class="text-lg font-heading font-bold text-primary-100 mb-2">"We´ve Only Just Begun"
+                            </h3>
+                            <p class="text-sm text-primary-100 mb-2">Carpenters • Close To You (1970)</p>
+                            <p class="text-sm text-primary-100 leading-relaxed mb-4">“We’ve Only Just Begun” es un canto
+                                al inicio de un camino compartido. La voz de Karen Carpenter transmite calidez y
+                                esperanza, como si cada palabra fuera una promesa de futuro. La melodía es luminosa, con
+                                un aire de celebración íntima. En clave simbólica, es un himno al comienzo: la vida y el
+                                amor como un viaje que apenas empieza, lleno de posibilidades y sueños.</p>
+                            <div class="song-quote">"Before the rising Sun... we fly."</div>
+                            <a href="https://youtu.be/IBP5JIZqVYw?si=jQtePfosvgw6pB4_" target="_blank"
+                                class="song-listen-btn">
+                                <svg class="w-4 h-4">
+                                    <use href="#play"></use>
+                                </svg>
+                                Escuchar
+                            </a>
+                            <div class="song-visualizer">
+                                <div class="visualizer-bar"></div>
+                                <div class="visualizer-bar"></div>
+                                <div class="visualizer-bar"></div>
+                                <div class="visualizer-bar"></div>
+
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Pagination controls -->
+                <div id="songs-pagination" class="mt-8 flex items-center justify-center gap-3"></div>
+        </section>
+        <!-- Contenedor para footer dinámico -->
+        <div id="footer-container"></div>
+    </main>
+    <!-- Scripts -->
+    <script src="/Scripts/components.js"></script>
+    <script src="/Scripts/scripts.js"></script>
+
+</body>
+
+</html>

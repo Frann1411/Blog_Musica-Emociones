@@ -1,0 +1,279 @@
+﻿<!DOCTYPE html>
+<html lang="es" class="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/Images/ondas-sonoras.png">
+    <title>Playlists | Música y Emociones</title>
+    <meta name="description" content="Playlists diseñadas para distintos momentos y emociones, con una propuesta visual y musical inmersiva.">
+    <meta name="keywords" content="playlists emocionales, listas de reproducción, música para momentos, ambientación musical">
+    <meta name="author" content="Frann Avila">
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:title" content="Playlists | Música y Emociones">
+    <meta property="og:description" content="Explora playlists creadas para acompañar momentos, emociones y atmósferas sonoras.">
+    <meta property="og:image" content="/Images/Playlist/cover.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Playlists | Música y Emociones">
+    <meta name="twitter:description" content="Playlists para distintos estados de ánimo y momentos del día.">
+    <script>
+        (function () {
+            try {
+                fetch('/Images/icons.svg')
+                    .then(r => r.text())
+                    .then(svg => {
+                        const insert = () => document.body.insertAdjacentHTML('afterbegin', svg);
+                        if (document.body) insert(); else document.addEventListener('DOMContentLoaded', insert);
+                    });
+            } catch (e) { }
+        })();
+    </script>
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="/Styles/styles.css">
+    <link rel="stylesheet" href="/Styles/playliststyle.css">
+</head>
+
+<body class="min-h-screen overflow-x-hidden bg-primary-900 text-primary-100 playlist-shell">
+    <main id="main-content">
+        <div id="navbar-container"></div>
+
+        <section class="bg-primary-900 pt-32 md:pt-16 pb-10 md:pb-14 px-4">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-3xl mx-auto text-center mb-10 md:mb-14">
+                    <p
+                        class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/8 border border-white/10 text-xs font-bold uppercase tracking-[0.22em] text-primary-200 mb-5">
+                        Viajes Musicales
+                    </p>
+                    <h1 class="text-3xl md:text-5xl font-heading font-bold mb-4 text-primary-50">Playlists con identidad
+                        propia</h1>
+                    <p class="text-sm md:text-base text-primary-200 leading-relaxed">
+                        Cada playlist tiene su propio clima emocional, su color, su portada y su ritmo visual. La idea
+                        es que no se sientan como bloques repetidos, sino como pequeños universos editoriales.
+                    </p>
+                </div>
+
+                <div class="playlist-grid">
+                    <article class="playlist-card playlist-card--nostalgia">
+                        <div class="playlist-cover">
+                            <img src="/Images/Playlist/nostalgiaYRecuerdos.webp" alt="Portada de Nostalgia y Recuerdos"
+                                loading="lazy" decoding="async">
+                            <span class="playlist-cover-chip"><svg class="w-4 h-4">
+                                    <use href="#hourglass"></use>
+                                </svg>Nostalgia</span>
+                        </div>
+                        <div class="playlist-body">
+                            <div class="playlist-topline">
+                                <span class="playlist-mood">Saudade</span>
+                                <span class="playlist-count">25 canciones</span>
+                            </div>
+                            <h3 class="playlist-title">Nostalgia y Recuerdos</h3>
+                            <p class="playlist-copy">Canciones que nos hacen sentir viajeros en el tiempo, llevando
+                                nuestras memorias más queridas a la vida.
+                                Tal cual un "Saudade", esta playlist es un abrazo melancólico que nos conecta con
+                                momentos, con la belleza de lo efímero y con la magia del paso del tiempo.
+                            </p>
+                            <div class="playlist-stats">
+                                <span class="playlist-stat"><svg class="w-4 h-4">
+                                        <use href="#music-note"></use>
+                                    </svg>25 canciones</span>
+                                <span class="playlist-stat"><svg class="w-4 h-4">
+                                        <use href="#clock"></use>
+                                    </svg>1h 45min</span>
+                            </div>
+                            <a href="https://youtube.com/playlist?list=PLwpRtoczt3xHx2y5lcWi5q6gMV8qWLBCt&si=ofR5J4xm_WEE7hI3"
+                                target="_blank" class="playlist-playlist-link">
+                                <svg class="w-4 h-4">
+                                    <use href="#play"></use>
+                                </svg>
+                                Escuchar
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="playlist-card playlist-card--esperanza">
+                        <div class="playlist-cover">
+                            <img src="/Images/Playlist/Relajarse.webp" alt="Portada de Para Relajarse y Desconectar"
+                                loading="lazy" decoding="async">
+                            <span class="playlist-cover-chip"><svg class="w-4 h-4">
+                                    <use href="#cloud-sun"></use>
+                                </svg>Calma</span>
+                        </div>
+                        <div class="playlist-body">
+                            <div class="playlist-topline">
+                                <span class="playlist-mood">Sereno</span>
+                                <span class="playlist-count">30 canciones</span>
+                            </div>
+                            <h3 class="playlist-title">Para Relajarse y Desconectar</h3>
+                            <p class="playlist-copy">Un refugio musical para soltar tensiones y dejar que la mente
+                                respire. Sonidos suaves, atmósferas envolventes y melodías que invitan a cerrar los ojos
+                                y fluir con la calma.</p>
+                            <div class="playlist-stats">
+                                <span class="playlist-stat"><svg class="w-4 h-4">
+                                        <use href="#music-note"></use>
+                                    </svg>30 canciones</span>
+                                <span class="playlist-stat"><svg class="w-4 h-4">
+                                        <use href="#clock"></use>
+                                    </svg>2h 15min</span>
+                            </div>
+                            <a href="https://youtube.com/playlist?list=PLwpRtoczt3xECtG_kr_RaUuYxPJ5JsiDs&si=eLI80_3yyzqUH2dq"
+                                target="_blank" class="playlist-playlist-link">
+                                <svg class="w-4 h-4">
+                                    <use href="#play"></use>
+                                </svg>
+                                Escuchar
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="playlist-card playlist-card--amor">
+                        <div class="playlist-cover">
+                            <img src="/Images/Playlist/amor.webp" alt="Portada de Amor" loading="lazy" decoding="async">
+                            <span class="playlist-cover-chip"><svg class="w-4 h-4">
+                                    <use href="#heart"></use>
+                                </svg>Amor</span>
+                        </div>
+                        <div class="playlist-body">
+                            <div class="playlist-topline">
+                                <span class="playlist-mood">Cálido</span>
+                                <span class="playlist-count">20 canciones</span>
+                            </div>
+                            <h3 class="playlist-title">Amor</h3>
+                            <p class="playlist-copy">Un recorrido por las múltiples facetas del amor: la ternura, la
+                                pasión, la entrega y la vulnerabilidad. Cada canción es un latido que celebra la unión y
+                                la intensidad de sentir.</p>
+                            <div class="playlist-stats">
+                                <span class="playlist-stat"><svg class="w-4 h-4">
+                                        <use href="#music-note"></use>
+                                    </svg>20 canciones</span>
+                                <span class="playlist-stat"><svg class="w-4 h-4">
+                                        <use href="#clock"></use>
+                                    </svg>1h 30min</span>
+                            </div>
+                            <a href="https://youtube.com/playlist?list=PLwpRtoczt3xFdL8Z1J-3-b7w07qLac1D8&si=y7NU4IKFRj-ZdaPy"
+                                target="_blank" class="playlist-playlist-link">
+                                <svg class="w-4 h-4">
+                                    <use href="#play"></use>
+                                </svg>
+                                Escuchar
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="playlist-card playlist-card--esperanza">
+                        <div class="playlist-cover">
+                            <img src="/Images/Playlist/superacion.webp" alt="Portada de Superación y Esperanza"
+                                loading="lazy" decoding="async">
+                            <span class="playlist-cover-chip"><svg class="w-4 h-4">
+                                    <use href="#sparkles"></use>
+                                </svg>Impulso</span>
+                        </div>
+                        <div class="playlist-body">
+                            <div class="playlist-topline">
+                                <span class="playlist-mood">Luminoso</span>
+                                <span class="playlist-count">20 canciones</span>
+                            </div>
+                            <h3 class="playlist-title">Superación y Esperanza</h3>
+                            <p class="playlist-copy">Melodías que inspiran fuerza interior y resiliencia. Música que
+                                acompaña en los momentos de lucha y abre la puerta a la confianza en lo que viene,
+                                recordando que siempre hay un nuevo amanecer.</p>
+                            <div class="playlist-stats">
+                                <span class="playlist-stat"><svg class="w-4 h-4">
+                                        <use href="#music-note"></use>
+                                    </svg>20 canciones</span>
+                                <span class="playlist-stat"><svg class="w-4 h-4">
+                                        <use href="#clock"></use>
+                                    </svg>1h 30min</span>
+                            </div>
+                            <a href="https://youtube.com/playlist?list=PLwpRtoczt3xGqsIb-nPw8rZs6T1ev4x9O&si=0JeHkNXUHzz7NR6D"
+                                target="_blank" class="playlist-playlist-link">
+                                <svg class="w-4 h-4">
+                                    <use href="#play"></use>
+                                </svg>
+                                Escuchar
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="playlist-card playlist-card--melancolia">
+                        <div class="playlist-cover">
+                            <img src="/Images/Playlist/ConexionEspiritual.webp" alt="Portada de Conexión Espiritual"
+                                loading="lazy" decoding="async">
+                            <span class="playlist-cover-chip"><svg class="w-4 h-4">
+                                    <use href="#music-note-beamed"></use>
+                                </svg>Interior</span>
+                        </div>
+                        <div class="playlist-body">
+                            <div class="playlist-topline">
+                                <span class="playlist-mood">Misticismo</span>
+                                <span class="playlist-count">Indefinido</span>
+                            </div>
+                            <h3 class="playlist-title">Alma y Trascendencia</h3>
+                            <p class="playlist-copy">Un espacio de introspección y plegaria musical. Sonidos que elevan,
+                                que invitan a mirar hacia dentro y a sentir la unión con lo invisible. Es música que se
+                                convierte en oración y viaje interior.</p>
+                            <div class="playlist-stats">
+                                <span class="playlist-stat"><svg class="w-4 h-4">
+                                        <use href="#music-note"></use>
+                                    </svg>Indefinido</span>
+                                <span class="playlist-stat"><svg class="w-4 h-4">
+                                        <use href="#clock"></use>
+                                    </svg>1h 30min</span>
+                            </div>
+                            <a href="https://youtube.com/playlist?list=PLwpRtoczt3xGvvmIsFXhqr8J-xHaKyNgF&si=lVhXya01b-vJl_MM"
+                                target="_blank" class="playlist-playlist-link">
+                                <svg class="w-4 h-4">
+                                    <use href="#play"></use>
+                                </svg>
+                                Escuchar
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="playlist-card playlist-card--volar">
+                        <div class="playlist-cover">
+                            <img src="/Images/Playlist/CeratiParaVolar.webp" alt="Portada de Cerati Para Volar"
+                                loading="lazy" decoding="async">
+                            <span class="playlist-cover-chip"><svg class="w-4 h-4">
+                                    <use href="#rocket"></use>
+                                </svg>Volar</span>
+                        </div>
+                        <div class="playlist-body">
+                            <div class="playlist-topline">
+                                <span class="playlist-mood">Cerati Eterno</span>
+                                <span class="playlist-count">13 canciones</span>
+                            </div>
+                            <h3 class="playlist-title">Cerati Para Volar</h3>
+                            <p class="playlist-copy">Un recorrido sonoro por las canciones más etéreas y atmosféricas de
+                                Gustavo Cerati. Cada canción es un viaje que lo lleva a uno a un mundo de emociones y
+                                reflexiones profundas.</p>
+                            <div class="playlist-stats">
+                                <span class="playlist-stat"><svg class="w-4 h-4">
+                                        <use href="#music-note"></use>
+                                    </svg>13 canciones</span>
+                                <span class="playlist-stat"><svg class="w-4 h-4">
+                                        <use href="#clock"></use>
+                                    </svg>12h 30min</span>
+                            </div>
+                            <a href="https://youtube.com/playlist?list=PLM07VS4A9B-ADA8Wfsb3IjqRM05XebZnF&si=PogqgaNxRXvcmIPW"
+                                target="_blank" class="playlist-playlist-link">
+                                <svg class="w-4 h-4">
+                                    <use href="#play"></use>
+                                </svg>
+                                Escuchar
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <div id="footer-container"></div>
+    </main>
+
+    <script src="/Scripts/components.js"></script>
+    <script src="/Scripts/scripts.js"></script>
+</body>
+
+</html>

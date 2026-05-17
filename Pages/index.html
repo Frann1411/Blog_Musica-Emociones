@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es" class="overflow-x-hidden">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="/Images/ondas-sonoras.png">
+  <title>Música y Emociones | Blog de canciones, artistas y playlists</title>
+  <meta name="description" content="Blog sobre música y emociones con artistas, canciones, playlists y lecturas personales sobre cómo la música conecta con la memoria y el bienestar.">
+  <meta name="keywords" content="blog de música, canciones, artistas, playlists, música y emociones, Gustavo Cerati, rock latino">
+  <meta name="author" content="Frann Avila">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:title" content="Música y Emociones | Blog de canciones, artistas y playlists">
+  <meta property="og:description" content="Descubre canciones, artistas y playlists que conectan con emociones, recuerdos y bienestar.">
+  <meta property="og:image" content="/Images/Portadas/Doble%20Vida.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Música y Emociones | Blog de canciones, artistas y playlists">
+  <meta name="twitter:description" content="Canciones, artistas y playlists con enfoque emocional y personal.">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Música y Emociones",
+      "url": "/Pages/index.html",
+      "description": "Blog sobre música y emociones con artistas, canciones y playlists con enfoque personal.",
+      "inLanguage": "es-ES",
+      "publisher": {
+        "@type": "Person",
+        "name": "Frann Avila"
+      }
+    }
+  </script>
+  <!-- Tailwind CSS compilado -->
+  <link rel="stylesheet" href="/dist/output.css">
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="/Styles/styles.css">
+  <!-- Inline SVG sprite loader (Heroicons-style sprite) -->
+  <script>
+    (function () {
+      try {
+        fetch('/Images/icons.svg')
+          .then(r => r.text())
+          .then(svg => {
+            const insert = () => document.body.insertAdjacentHTML('afterbegin', svg);
+            if (document.body) insert();
+            else document.addEventListener('DOMContentLoaded', insert);
+          });
+      } catch (e) { }
+    })();
+  </script>
+</head>
+
+<body class="min-h-screen overflow-x-hidden">
+  <main id="main-content">
+    <!-- Contenedor para navbar dinámico -->
+    <div id="navbar-container"></div>
+
+    <!-- Espacio para navbar fijo -->
+    <div class="h-0"></div>
+
+    <!-- hero section con carrusel -->
+    <section id="inicio" class="relative overflow-hidden pt-8 pb-8 md:pb-12" style="background: #092635;">
+
+      <!-- Fondo decorativo con elementos flotantes -->
+      <div class="absolute inset-0 pointer-events-none opacity-40 hidden md:block">
+        <div
+          class="absolute -top-20 left-[-8%] w-80 h-80 bg-primary-500/30 rounded-full blur-3xl animate-float animate-hero-glow">
+        </div>
+        <div class="absolute top-1/3 right-[-6%] w-96 h-96 bg-secondary-500/25 rounded-full blur-3xl animate-float"
+          style="animation-delay: 2s"></div>
+        <div
+          class="absolute bottom-[-8%] left-1/3 w-[28rem] h-[28rem] bg-primary-300/10 rounded-full blur-3xl animate-float"
+          style="animation-delay: 4s"></div>
+      </div>
+
+      <!-- Carrusel de slides -->
+      <div class="relative w-full flex items-center justify-center px-2 md:px-3">
+
+        <!-- Slides container -->
+        <div class="carousel-wrapper relative mx-0 my-0">
+
+          <!-- Slide 1 -->
+          <div class="carousel-slide active absolute inset-0 transition-opacity duration-1000">
+            <img src="/Images/Carrusel/vinilo2.webp" alt=""
+              class="carousel-bg-img absolute inset-0 w-full h-full object-cover scale-105">
+            <div class="absolute inset-0 hero-overlay"></div>
+            <div class="absolute inset-0 hero-halo blur-3xl opacity-70"></div>
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-neutral-950/40"></div>
+            <div class="relative z-10 h-full flex items-center justify-center px-4 sm:px-6 md:px-12 py-12">
+              <div class="hero-panel w-full max-w-3xl rounded-3xl px-6 py-8 sm:px-8 md:px-12 md:py-12 text-center">
+                <span class="hero-chip mx-auto mb-4 md:mb-6 animate-hero-fade-up"
+                  data-hero-animate="animate-hero-fade-up" data-hero-delay="0ms">Experiencia sonora</span>
+                <h1
+                  class="text-2xl sm:text-3xl md:text-6xl font-heading font-bold text-white mb-4 md:mb-6 animate-hero-fade-up"
+                  data-hero-animate="animate-hero-fade-up" data-hero-delay="90ms">
+                  La música es el <span class="text-primary-200">lenguaje del alma</span>
+                </h1>
+                <p class="text-sm sm:text-base md:text-xl text-primary-100 max-w-2xl mx-auto mb-6 md:mb-8 animate-hero-fade-left"
+                  data-hero-animate="animate-hero-fade-left" data-hero-delay="180ms">
+                  Explora cómo la música conecta con nuestras emociones y transforma nuestro bienestar.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+                  <a href="artistas.html"
+                    class="btn-primary-tw inline-flex items-center justify-center animate-hero-glow"
+                    data-hero-animate="animate-hero-glow" data-hero-delay="260ms">
+                    Conoce más artistas
+                  </a>
+                  <span
+                    class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/10 px-4 py-3 text-sm text-primary-100 backdrop-blur-sm animate-hero-fade-up"
+                    data-hero-animate="animate-hero-fade-up" data-hero-delay="340ms">
+                    <svg class="inline-block w-5 h-5 mr-2 text-current">
+                      <use href="#soundwave"></use>
+                    </svg>
+                    Carrusel emocional
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-1000">
+            <img src="/Images/Carrusel/vinilo.webp" alt=""
+              class="carousel-bg-img absolute inset-0 w-full h-full object-cover scale-105">
+            <div class="absolute inset-0 hero-overlay"></div>
+            <div class="absolute inset-0 hero-halo blur-3xl opacity-70"></div>
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-neutral-950/40"></div>
+            <div class="relative z-10 h-full flex items-center justify-center px-4 sm:px-6 md:px-12 py-12">
+              <div class="hero-panel w-full max-w-3xl rounded-3xl px-6 py-8 sm:px-8 md:px-12 md:py-12 text-center">
+                <span class="hero-chip mx-auto mb-4 md:mb-6 animate-hero-fade-up"
+                  data-hero-animate="animate-hero-fade-up" data-hero-delay="0ms">Descubre nuevas historias</span>
+                <h1
+                  class="text-2xl sm:text-3xl md:text-6xl font-heading font-bold text-white mb-4 md:mb-6 animate-hero-fade-up"
+                  data-hero-animate="animate-hero-fade-up" data-hero-delay="90ms">
+                  Descubre canciones que <span class="text-primary-200">tocan el corazón</span>
+                </h1>
+                <p class="text-sm sm:text-base md:text-xl text-primary-100 max-w-2xl mx-auto mb-6 md:mb-8 animate-hero-fade-left"
+                  data-hero-animate="animate-hero-fade-left" data-hero-delay="180ms">
+                  Una colección curada de canciones que resonarán con tus emociones.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+                  <a href="/Pages/canciones.html"
+                    class="btn-primary-tw inline-flex items-center justify-center animate-hero-glow"
+                    data-hero-animate="animate-hero-glow" data-hero-delay="260ms">
+                    Ver canciones
+                  </a>
+                  <span
+                    class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/10 px-4 py-3 text-sm text-primary-100 backdrop-blur-sm animate-hero-fade-up"
+                    data-hero-animate="animate-hero-fade-up" data-hero-delay="340ms">
+                    <svg class="inline-block w-5 h-5 text-current">
+                      <use href="#heart-pulse"></use>
+                    </svg>
+                    Texturas suaves
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-1000">
+            <img src="/Images/Carrusel/fond.webp" alt=""
+              class="carousel-bg-img absolute inset-0 w-full h-full object-cover scale-105">
+            <div class="absolute inset-0 hero-overlay"></div>
+            <div class="absolute inset-0 hero-halo blur-3xl opacity-70"></div>
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-neutral-950/40"></div>
+            <div class="relative z-10 h-full flex items-center justify-center px-4 sm:px-6 md:px-12 py-12">
+              <div class="hero-panel w-full max-w-3xl rounded-3xl px-6 py-8 sm:px-8 md:px-12 md:py-12 text-center">
+                <span class="hero-chip mx-auto mb-4 md:mb-6 animate-hero-fade-up"
+                  data-hero-animate="animate-hero-fade-up" data-hero-delay="0ms">Momentos para volver</span>
+                <h1
+                  class="text-2xl sm:text-3xl md:text-6xl font-heading font-bold text-white mb-4 md:mb-6 animate-hero-fade-up"
+                  data-hero-animate="animate-hero-fade-up" data-hero-delay="90ms">
+                  Playlists para <span class="text-primary-200">cada momento</span>
+                </h1>
+                <p class="text-sm sm:text-base md:text-xl text-primary-100 max-w-2xl mx-auto mb-6 md:mb-8 animate-hero-fade-left"
+                  data-hero-animate="animate-hero-fade-left" data-hero-delay="180ms">
+                  Selecciones musicales perfectas para acompañar cada emoción y instante.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+                  <a href="/Pages/playlist.html"
+                    class="btn-primary-tw inline-flex items-center justify-center animate-hero-glow"
+                    data-hero-animate="animate-hero-glow" data-hero-delay="260ms">
+                    Explorar playlists
+                  </a>
+                  <span
+                    class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/10 px-4 py-3 text-sm text-primary-100 backdrop-blur-sm animate-hero-fade-up"
+                    data-hero-animate="animate-hero-fade-up" data-hero-delay="340ms">
+                    <svg class="inline-block w-5 h-5 text-current">
+                      <use href="#music-note-beamed"></use>
+                    </svg>
+                    Ambiente inmersivo
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Impacto Emocional de la Música -->
+    <section class="impact-section bg-primary-900 py-12 md:py-24 px-4 overflow-x-hidden">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-10 md:gap-12 items-center">
+
+          <!-- Contenido de la izquierda -->
+          <div class="impact-copy space-y-5 md:space-y-6 min-w-0">
+            <div>
+              <h2
+                class="text-2xl sm:text-3xl md:text-5xl font-heading font-bold text-white mb-4 md:mb-6 leading-tight break-words">
+                El Poder de la Música en <span class="text-primary-500">Nuestras Emociones</span>
+              </h2>
+              <p class="text-sm sm:text-base md:text-lg text-white leading-relaxed">
+                La música es un lenguaje universal que trasciende fronteras, épocas y culturas. No necesita traducción:
+                habla directamente al corazón. Tiene la capacidad de despertar emociones profundas, de conectar con
+                recuerdos o emociones, y de convertirse en refugio en momentos de soledad, alegría o tristeza.
+              </p>
+              <p class="text-sm sm:text-base md:text-lg text-white leading-relaxed mt-3 md:mt-4">
+                Más que sonidos, cada canción es un espejo del alma. Nos revela lo que sentimos, incluso aquello que no
+                sabíamos nombrar. Es un pulso invisible que acompaña nuestras historias, que nos envuelve y nos
+                transforma desde dentro.
+              </p>
+              <p class="text-sm sm:text-base md:text-lg text-white leading-relaxed mt-3 md:mt-4">
+                Aquí celebramos ese poder extraordinario: la música como puente hacia lo íntimo, como compañía en la
+                nostalgia y como chispa que ilumina la esperanza. Porque cuando una melodía nos toca, no solo
+                escuchamos… también recordamos, sanamos y volvemos a vivir.
+              </p>
+            </div>
+
+            <!-- Cards de emociones -->
+            <div class="impact-cards space-y-4 md:space-y-5 mt-8 md:mt-10">
+              <!-- Card 1 -->
+              <div
+                class="premium-card premium-card-soft p-3 rounded-2xl min-h-[80px] hover:shadow-lg transition-shadow duration-300">
+                <div class="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-2">
+                  <svg class="inline-block text-2xl text-primary-500 mt-0">
+                    <use href="#heart-pulse"></use>
+                  </svg>
+                  <p class="text-sm sm:text-base text-neutral-700 leading-snug sm:leading-normal min-w-0">
+                    Aumenta los latidos del corazón con melodías
+                    intensas</p>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div
+                class="premium-card premium-card-soft p-3 rounded-2xl min-h-[80px] hover:shadow-lg transition-shadow duration-300">
+                <div class="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-2">
+                  <svg class="inline-block text-2xl text-secondary-500 mt-0">
+                    <use href="#sparkles"></use>
+                  </svg>
+                  <p class="text-sm sm:text-base text-neutral-700 leading-snug sm:leading-normal min-w-0">
+                    Libera dopamina, haciéndonos sentir felicidad y
+                    placer</p>
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div
+                class="premium-card premium-card-soft p-3 rounded-2xl min-h-[80px] hover:shadow-lg transition-shadow duration-300">
+                <div class="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-2">
+                  <svg class="inline-block text-2xl text-primary-500 mt-0">
+                    <use href="#cloud-sun"></use>
+                  </svg>
+                  <p class="text-sm sm:text-base text-neutral-700 leading-snug sm:leading-normal min-w-0">Nos ayuda a
+                    procesar y expresar la melancolía</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cita y visual de la derecha -->
+          <div class="impact-side space-y-6 md:space-y-8 min-w-0">
+            <div
+              class="impact-quote-card p-5 sm:p-6 md:p-8 rounded-2xl bg-gradient-to-br from-primary-50 to-secondary-50 dark:from-primary-900/20 dark:to-secondary-900/20 border border-primary-200 dark:border-primary-800">
+              <blockquote class="space-y-3 md:space-y-4">
+                <p
+                  class="text-lg sm:text-xl md:text-2xl font-heading font-bold text-neutral-900 dark:text-white italic leading-tight">
+                  "La música expresa lo que no puede ser dicho y aquello sobre lo que es imposible permanecer en
+                  silencio"
+                </p>
+                <footer class="text-neutral-600 dark:text-neutral-400 font-semibold">
+                  — Victor Hugo
+                </footer>
+              </blockquote>
+            </div>
+
+            <!-- Elemento decorativo -->
+            <div class="impact-quote-visual flex justify-center">
+              <svg class="inline-block text-4xl sm:text-5xl md:text-6xl text-primary-200 dark:text-primary-900/40">
+                <use href="#music-note-beamed"></use>
+              </svg>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Experiencias Musicales -->
+    <section class="bg-primary-900 py-16 md:py-24 px-4">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-4xl md:text-5xl font-heading font-bold text-center text-primary-100 mb-16">
+          Momentos que la Música <span class="text-primary-200">Transforma</span>
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-6 md:gap-8">
+
+          <!-- Amanecer -->
+          <div class="group cursor-pointer content-card-trigger" role="button" tabindex="0"
+            data-card-modal-title="Amanecer" data-card-modal-eyebrow="Música para comenzar"
+            data-card-modal-body="Las canciones de este momento acompañan la energía inicial del día y abren espacio para respirar, activar la mente y conectar con el presente."
+            data-card-modal-points="Melodías suaves para despertar;Ritmos que elevan el ánimo;Una transición gradual hacia el día">
+            <div
+              class="premium-card premium-card-emphasis relative overflow-hidden rounded-2xl mb-4 h-48 bg-primary-400 shadow-lg group-hover:shadow-xl transition-all duration-300 transform group-hover:scale-105">
+              <div class="absolute inset-0 flex items-center justify-center">
+                <svg class="inline-block text-5xl text-white group-hover:scale-110 transition-transform">
+                  <use href="#sunrise"></use>
+                </svg>
+              </div>
+            </div>
+            <h3 class="text-xl font-heading font-bold text-white mb-2">Amanecer</h3>
+            <p class="text-primary-100 leading-relaxed text-sm">
+              Esas melodías que nos despiertan el alma y nos llenan de energía para empezar el día.
+            </p>
+            <button
+              class="mt-3 inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1.5 text-xs font-semibold text-white backdrop-blur-sm">
+              <svg class="w-4 h-4">
+                <use href="#chevron-right"></use>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Reflexión -->
+          <div class="group cursor-pointer content-card-trigger" role="button" tabindex="0"
+            data-card-modal-title="Reflexión" data-card-modal-eyebrow="Música para mirar hacia adentro"
+            data-card-modal-body="Estas canciones funcionan como espejos: ordenan ideas, abren preguntas y dejan que la emoción aparezca sin prisa."
+            data-card-modal-points="Letras introspectivas;Capas instrumentales envolventes;Momentos de pausa y contemplación">
+            <div
+              class="premium-card premium-card-emphasis relative overflow-hidden rounded-2xl mb-4 h-48 bg-gradient-to-br from-purple-400 to-indigo-600 shadow-lg group-hover:shadow-xl transition-all duration-300 transform group-hover:scale-105">
+              <div class="absolute inset-0 flex items-center justify-center">
+                <svg class="inline-block text-5xl text-white group-hover:scale-110 transition-transform">
+                  <use href="#sparkles"></use>
+                </svg>
+              </div>
+            </div>
+            <h3 class="text-xl font-heading font-bold text-white mb-2">Reflexión</h3>
+            <p class="text-primary-100 leading-relaxed text-sm">
+              Canciones que nos llevan a un viaje interior y nos ayudan a conectar con nuestro ser.
+            </p>
+            <button
+              class="mt-3 inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1.5 text-xs font-semibold text-white backdrop-blur-sm">
+              <svg class="w-4 h-4">
+                <use href="#chevron-right"></use>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Noche -->
+          <div class="group cursor-pointer content-card-trigger" role="button" tabindex="0"
+            data-card-modal-title="Noche" data-card-modal-eyebrow="Música para cerrar el día"
+            data-card-modal-body="Sonidos que acompañan la calma, la memoria y ese instante en el que todo se vuelve más íntimo y silencioso."
+            data-card-modal-points="Ambientes cálidos;Canciones para desacelerar;Texturas suaves y envolventes">
+            <div
+              class="premium-card premium-card-emphasis relative overflow-hidden rounded-2xl mb-4 h-48 bg-gradient-to-br from-blue-500 to-cyan-400 shadow-lg group-hover:shadow-xl transition-all duration-300 transform group-hover:scale-105">
+              <div class="absolute inset-0 flex items-center justify-center">
+                <svg class="inline-block text-5xl text-white group-hover:scale-110 transition-transform">
+                  <use href="#sparkles"></use>
+                </svg>
+              </div>
+            </div>
+            <h3 class="text-xl font-heading font-bold text-white mb-2">Noche</h3>
+            <p class="text-primary-100 leading-relaxed text-sm">
+              Sonidos que acompañan nuestros momentos de paz y nos ayudan a encontrar la calma.
+            </p>
+            <button
+              class="mt-3 inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1.5 text-xs font-semibold text-white backdrop-blur-sm">
+              <svg class="w-4 h-4">
+                <use href="#chevron-right"></use>
+              </svg>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contenedor para footer dinámico -->
+    <div id="footer-container"></div>
+
+  </main>
+  <!-- Scripts -->
+  <script src="/Scripts/components.js"></script>
+  <script src="/Scripts/scripts.js"></script>
+</body>
+
+</html>

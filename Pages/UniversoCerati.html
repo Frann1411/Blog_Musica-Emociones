@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es" class="overflow-x-hidden">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="/Images/ondas-sonoras.png">
+	<title>Universo Cerati | Proyecto 3D interactivo en desarrollo</title>
+	<meta name="description" content="Próximo proyecto de experiencia web inmersiva en 3D sobre la discografía solista de Gustavo Cerati, con un viaje espacial e interpretaciones personales.">
+	<meta name="keywords" content="Universo Cerati, Gustavo Cerati, experiencia 3D, web inmersiva, proyecto musical, rock argentino">
+	<meta name="author" content="Frann Avila">
+	<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+	<meta property="og:type" content="website">
+	<meta property="og:locale" content="es_ES">
+	<meta property="og:title" content="Universo Cerati | Proyecto 3D interactivo en desarrollo">
+	<meta property="og:description" content="Una propuesta inmersiva que viajará por la discografía solista de Gustavo Cerati en un entorno espacial e interactivo.">
+	<meta property="og:image" content="/Images/Artistas/Cerati3.webp">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Universo Cerati | Proyecto 3D interactivo en desarrollo">
+	<meta name="twitter:description" content="Proyecto web inmersivo inspirado en la obra solista de Gustavo Cerati.">
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "WebPage",
+			"name": "Universo Cerati",
+			"url": "/Pages/UniversoCerati.html",
+			"description": "Próximo proyecto de experiencia web inmersiva en 3D sobre Gustavo Cerati.",
+			"inLanguage": "es-ES",
+			"about": {
+				"@type": "MusicArtist",
+				"name": "Gustavo Cerati"
+			}
+		}
+	</script>
+	<link rel="stylesheet" href="/dist/output.css">
+	<link rel="stylesheet" href="/Styles/styles.css">
+	<style>
+		.uc-shell {
+			background:
+				radial-gradient(circle at 15% 18%, rgba(130, 190, 214, 0.22), transparent 34%),
+				radial-gradient(circle at 85% 12%, rgba(109, 147, 198, 0.2), transparent 36%),
+				linear-gradient(180deg, #061925 0%, #092635 45%, #0b2f44 100%);
+			min-height: 100vh;
+			overflow-x: hidden;
+		}
+
+		.uc-grid {
+			display: grid;
+			gap: 2rem;
+			grid-template-columns: 1fr;
+			align-items: center;
+		}
+
+		.uc-panel {
+			border: 1px solid rgba(255, 255, 255, 0.14);
+			background: linear-gradient(180deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.06));
+			backdrop-filter: blur(10px);
+			border-radius: 1.5rem;
+			box-shadow: 0 24px 52px rgba(0, 0, 0, 0.22);
+		}
+
+		.uc-kicker {
+			display: inline-flex;
+			align-items: center;
+			gap: 0.4rem;
+			border: 1px solid rgba(191, 223, 241, 0.5);
+			border-radius: 9999px;
+			padding: 0.35rem 0.9rem;
+			font-size: 0.72rem;
+			font-weight: 700;
+			letter-spacing: 0.16em;
+			text-transform: uppercase;
+			color: #cde8f8;
+		}
+
+		.uc-hourglass-wrap {
+			display: grid;
+			place-items: center;
+			min-height: 320px;
+		}
+
+		.uc-hourglass {
+			position: relative;
+			width: 170px;
+			height: 260px;
+			border-radius: 30px;
+			border: 2px solid rgba(214, 232, 243, 0.8);
+			background: linear-gradient(180deg, rgba(15, 42, 57, 0.75), rgba(13, 33, 45, 0.7));
+			box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08), 0 25px 45px rgba(0, 0, 0, 0.35);
+			overflow: hidden;
+		}
+
+		.uc-hourglass::before,
+		.uc-hourglass::after {
+			content: "";
+			position: absolute;
+			left: 16px;
+			width: calc(100% - 32px);
+			height: 34%;
+			border-radius: 18px;
+			border: 1px solid rgba(204, 228, 240, 0.35);
+			background: rgba(90, 133, 166, 0.15);
+		}
+
+		.uc-hourglass::before {
+			top: 16px;
+		}
+
+		.uc-hourglass::after {
+			bottom: 16px;
+		}
+
+		.uc-neck {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			width: 14px;
+			height: 20px;
+			transform: translate(-50%, -50%);
+			border-radius: 999px;
+			background: rgba(240, 251, 255, 0.82);
+			box-shadow: 0 0 12px rgba(220, 245, 255, 0.8);
+		}
+
+		.uc-sand-top,
+		.uc-sand-bottom,
+		.uc-sand-stream {
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			background: linear-gradient(180deg, #d8f2ff, #9fd8f6);
+		}
+
+		.uc-sand-top {
+			top: 32px;
+			width: 108px;
+			height: 72px;
+			clip-path: polygon(0 0, 100% 0, 58% 100%, 42% 100%);
+			animation: ucSandTop 5.2s linear infinite;
+			transform-origin: top center;
+		}
+
+		.uc-sand-stream {
+			top: 120px;
+			width: 5px;
+			height: 78px;
+			border-radius: 999px;
+			animation: ucSandStream 5.2s linear infinite;
+			box-shadow: 0 0 12px rgba(192, 233, 255, 0.8);
+		}
+
+		.uc-sand-bottom {
+			bottom: 32px;
+			width: 108px;
+			height: 20px;
+			clip-path: polygon(42% 0, 58% 0, 100% 100%, 0 100%);
+			animation: ucSandBottom 5.2s linear infinite;
+			transform-origin: bottom center;
+		}
+
+		.uc-orbit {
+			position: absolute;
+			inset: -20px;
+			border-radius: 9999px;
+			border: 1px dashed rgba(184, 223, 241, 0.32);
+			animation: ucSpin 16s linear infinite;
+			pointer-events: none;
+		}
+
+		@keyframes ucSandTop {
+			0% {
+				transform: translateX(-50%) scaleY(1);
+				opacity: 1;
+			}
+
+			85% {
+				transform: translateX(-50%) scaleY(0.08);
+				opacity: 0.55;
+			}
+
+			100% {
+				transform: translateX(-50%) scaleY(1);
+				opacity: 1;
+			}
+		}
+
+		@keyframes ucSandBottom {
+			0% {
+				transform: translateX(-50%) scaleY(0.25);
+			}
+
+			85% {
+				transform: translateX(-50%) scaleY(1.05);
+			}
+
+			100% {
+				transform: translateX(-50%) scaleY(0.25);
+			}
+		}
+
+		@keyframes ucSandStream {
+			0%,
+			12% {
+				opacity: 0.15;
+			}
+
+			24%,
+			84% {
+				opacity: 1;
+			}
+
+			100% {
+				opacity: 0.15;
+			}
+		}
+
+		@keyframes ucSpin {
+			from {
+				transform: rotate(0deg);
+			}
+
+			to {
+				transform: rotate(360deg);
+			}
+		}
+
+		@media (min-width: 960px) {
+			.uc-grid {
+				grid-template-columns: 1.15fr 0.85fr;
+			}
+		}
+
+		@media (max-width: 767px) {
+			.uc-hourglass {
+				width: 148px;
+				height: 224px;
+			}
+
+			.uc-sand-top,
+			.uc-sand-bottom {
+				width: 92px;
+			}
+		}
+	</style>
+</head>
+
+<body class="uc-shell overflow-x-hidden text-primary-50">
+	<main id="main-content">
+
+		<section class="pb-8 md:pb-10">
+			<div class="max-w-7xl mx-auto uc-grid">
+				<article class="uc-panel p-6 sm:p-8 md:p-10">
+					<span class="uc-kicker mb-5">Próximo Proyecto</span>
+					<h1 class="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-white leading-tight mb-4">
+						Universo Cerati
+					</h1>
+					<p class="text-base sm:text-lg text-primary-100 leading-relaxed mb-4">
+						Una experiencia web inmersiva en 3D interactiva, pensada como un viaje espacial por la discografía
+						de Gustavo Adrián Cerati, tanto en su trayectoria solista, con Soda Stereo y en sus colaboraciones.
+					</p>
+					<p class="text-sm sm:text-base text-primary-200 leading-relaxed mb-6">
+						Cada planeta representará una etapa sonora, con interpretaciones personales, capas visuales y conexiones
+						emocionales construidas desde mi propia escucha de su obra.
+					</p>
+
+					<div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+						<div class="rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
+							<p class="text-xs uppercase tracking-[0.18em] text-primary-300 mb-1">Enfoque</p>
+							<p class="text-sm text-white font-semibold">Narrativa orbital</p>
+						</div>
+						<div class="rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
+							<p class="text-xs uppercase tracking-[0.18em] text-primary-300 mb-1">Formato</p>
+							<p class="text-sm text-white font-semibold">Web 3D interactiva</p>
+						</div>
+						<div class="rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
+							<p class="text-xs uppercase tracking-[0.18em] text-primary-300 mb-1">Estado</p>
+							<p class="text-sm text-white font-semibold">En Desarrollo</p>
+						</div>
+					</div>
+				</article>
+
+				<aside class="uc-panel p-6 md:p-8 relative">
+					<div class="uc-hourglass-wrap">
+						<div class="relative">
+							<div class="uc-orbit"></div>
+							<div class="uc-hourglass" aria-hidden="true">
+								<div class="uc-neck"></div>
+								<div class="uc-sand-top"></div>
+								<div class="uc-sand-stream"></div>
+								<div class="uc-sand-bottom"></div>
+							</div>
+						</div>
+					</div>
+					<p class="text-center text-sm text-primary-200 leading-relaxed mt-2">
+						Pronto el viaje empezará.
+                        ¿Sabén qué acorde es este?...
+					</p>
+				</aside>
+			</div>
+		</section>
+
+		<section class="px-4 pb-12 md:pb-16">
+			<div class="max-w-7xl mx-auto">
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+					<article class="rounded-2xl border border-white/10 bg-white/5 px-5 py-5">
+						<h2 class="text-base font-heading font-semibold text-white mb-2">Constelaciones musicales</h2>
+						<p class="text-sm text-primary-200 leading-relaxed">Mapas visuales que conectan canciones, atmósferas y símbolos recurrentes en cada álbum.</p>
+					</article>
+					<article class="rounded-2xl border border-white/10 bg-white/5 px-5 py-5">
+						<h2 class="text-base font-heading font-semibold text-white mb-2">Lectura íntima de letras</h2>
+						<p class="text-sm text-primary-200 leading-relaxed">Fragmentos comentados desde una mirada personal, emocional y narrativa.</p>
+					</article>
+					<article class="rounded-2xl border border-white/10 bg-white/5 px-5 py-5">
+						<h2 class="text-base font-heading font-semibold text-white mb-2">Interacción en tiempo real</h2>
+						<p class="text-sm text-primary-200 leading-relaxed">Desplazamiento espacial, capas sonoras y elementos reactivos para explorar cada universo.</p>
+					</article>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+</body>
+
+</html>

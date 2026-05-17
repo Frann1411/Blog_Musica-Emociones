@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="es" class="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/Images/ondas-sonoras.png">
+    <title>Artistas | Música y Emociones</title>
+    <meta name="description"
+        content="Explora artistas que marcaron la historia de la música y dejaron canciones que conectan con emociones, recuerdos y distintas etapas de vida.">
+    <meta name="keywords"
+        content="artistas de música, rock latino, The Beatles, Gustavo Cerati, Spinetta, música emocional">
+    <meta name="author" content="Frann Avila">
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:title" content="Artistas | Música y Emociones">
+    <meta property="og:description"
+        content="Una selección de artistas que marcaron la banda sonora de distintas emociones y épocas.">
+    <meta property="og:image" content="/Images/Artistas/Cerati3.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Artistas | Música y Emociones">
+    <meta name="twitter:description" content="Recorrido por artistas icónicos y la emoción que despierta su obra.">
+    <script>
+        (function () {
+            try {
+                fetch('/Images/icons.svg')
+                    .then(r => r.text())
+                    .then(svg => {
+                        const insert = () => document.body.insertAdjacentHTML('afterbegin', svg);
+                        if (document.body) insert(); else document.addEventListener('DOMContentLoaded', insert);
+                    });
+            } catch (e) { }
+        })();
+    </script>
+    <!-- Tailwind CSS compilado -->
+    <link rel="stylesheet" href="/dist/output.css">
+    <!-- Tailwind CSS (compilado desde styles.css) -->
+    <link rel="stylesheet" href="/Styles/styles.css">
+</head>
+
+<body class="">
+    <main id="main-content">
+        <!-- Contenedor para navbar dinámico -->
+        <div id="navbar-container"></div>
+
+        <!-- Artistas: grid de tarjetas -->
+        <section class="bg-primary-900 pt-16 md:pt-12 pb-8 md:pb-8 px-4">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-3xl mx-auto text-center mb-10 md:mb-14">
+                    <p
+                        class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/8 border border-white/10 text-xs font-bold uppercase tracking-[0.22em] text-primary-200 mb-5">
+                        Leyendas Eternas
+                    </p>
+                    <h1 class="text-3xl md:text-5xl font-heading font-bold mb-4 text-primary-50">Artistas</h1>
+                    <p class="text-sm md:text-base text-primary-200 leading-relaxed">
+                        Cada artista es un universo de emociones, historias y sonidos que han dejado una marca
+                        imborrable en la música. Desde los pioneros que sentaron las bases del rock hasta los
+                        innovadores que redefinieron el pop, cada uno de estos músicos ha contribuido a crear la banda
+                        sonora de nuestras vidas. Explora sus trayectorias, descubre sus álbumes más emblemáticos y
+                        déjate llevar por las canciones que han resonado a lo largo de las décadas.
+                    </p>
+                </div>
+                <div id="artists-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+                    <!-- The Beatles -->
+                    <article
+                        class="artist-card bg-primary-200 rounded-2xl overflow-hidden shadow-soft hover:shadow-lg transition-transform duration-300 hover:-translate-y-1"
+                        data-albums="The White Album;Abbey Road;Sgt. Pepper's Lonely Hearts Club Band"
+                        data-songs="Hey Jude;While My Guitar Gently Weeps ;Yesterday; Something">
+                        <div class="h-56 overflow-hidden">
+                            <img src="/Images/Artistas/Beatles.webp" alt="The Beatles"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-xl font-heading font-bold text-neutral-900 mb-2">The Beatles</h3>
+                            <p class="text-sm text-primary-900 leading-relaxed mb-4">Fueron una banda británica formada
+                                en Liverpool en 1960, integrada por John Lennon, Paul McCartney, George Harrison y Ringo
+                                Starr. Considerados la banda más influyente de la historia, revolucionaron la música
+                                popular con su creatividad, innovación y evolución constante.</p>
+                            <div class="flex items-center justify-between">
+                                <span
+                                    class="inline-flex items-center px-3 py-1 rounded-full bg-secondary-100 text-secondary-800 text-sm">Rock</span>
+                                <button
+                                    class="open-artist-modal ml-3 inline-flex items-center px-3 py-1 rounded-full bg-primary-500 text-white text-sm">Ver
+                                    más</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Gustavo Cerati -->
+                    <article
+                        class="artist-card bg-primary-200 rounded-2xl overflow-hidden shadow-soft hover:shadow-lg transition-transform duration-300 hover:-translate-y-1"
+                        data-albums="Bocanada;Amor Amarillo;Fuerza Natural"
+                        data-songs="Alma; Lisa; Fuerza Natural ;Cactus">
+                        <div class="h-56 overflow-hidden">
+                            <img src="/Images/Artistas/Cerati3.webp" alt="Gustavo Cerati"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-xl font-heading font-bold text-neutral-900 mb-2">Gustavo Cerati</h3>
+                            <p class="text-sm text-primary-900 leading-relaxed mb-4">Reconocido como una de las figuras
+                                más influyentes del rock en español. Como líder de Soda Stereo, revolucionó la música
+                                latinoamericana con un sonido innovador que mezclaba rock, new wave y elementos
+                                electrónicos.</p>
+                            <div class="flex items-center justify-between">
+                                <span
+                                    class="inline-flex items-center px-3 py-1 rounded-full bg-secondary-100 text-secondary-800 text-sm">Rock
+                                    Latino</span>
+                                <button
+                                    class="open-artist-modal ml-3 inline-flex items-center px-3 py-1 rounded-full bg-primary-500 text-white text-sm">Ver
+                                    más</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Luis Alberto Spinetta -->
+                    <article
+                        class="artist-card bg-primary-200 rounded-2xl overflow-hidden shadow-soft hover:shadow-lg transition-transform duration-300 hover:-translate-y-1"
+                        data-albums="Artaud;Almendra;Pescado Rabioso"
+                        data-songs="Muchacha (ojos de papel);Post-Crucifixión;El Anillo del Capitán Beto;Barro Tal Vez">
+                        <div class="h-56 overflow-hidden">
+                            <img src="/Images/Artistas/Spinetta.webp" alt="Luis Alberto Spinetta"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-xl font-heading font-bold text-neutral-900 mb-2">Luis Alberto Spinetta</h3>
+                            <p class="text-sm text-primary-900 leading-relaxed mb-4">Conocido como "El Flaco", fue un
+                                músico, compositor y poeta argentino, considerado una de las figuras más influyentes del
+                                rock en español. Fundador de bandas icónicas como Almendra y Pescado Rabioso.</p>
+                            <div class="flex items-center justify-between">
+                                <span
+                                    class="inline-flex items-center px-3 py-1 rounded-full bg-secondary-100 text-secondary-800 text-sm">Rock
+                                    Latino</span>
+                                <button
+                                    class="open-artist-modal ml-3 inline-flex items-center px-3 py-1 rounded-full bg-primary-500 text-white text-sm">Ver
+                                    más</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Carpenters -->
+                    <article
+                        class="artist-card bg-primary-200 rounded-2xl overflow-hidden shadow-soft hover:shadow-lg transition-transform duration-300 hover:-translate-y-1"
+                        data-albums="Close to You;A Song for You; The Sigles"
+                        data-songs="We've Only Just Begun;Maybe It's You;Close to You, Rainy Days and Mondays">
+                        <div class="h-56 overflow-hidden">
+                            <img src="/Images/Artistas/Carpenters.webp" alt="Carpenters"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-xl font-heading font-bold text-neutral-900 mb-2">Carpenters</h3>
+                            <p class="text-sm text-primary-900 leading-relaxed mb-4">Dúo estadounidense formado por los
+                                hermanos Karen y Richard Carpenter, conocidos por su sonido melódico y armonías
+                                impecables. Alcanzaron la fama en los años 70 con éxitos como Close to You.</p>
+                            <div class="flex items-center justify-between">
+                                <span
+                                    class="inline-flex items-center px-3 py-1 rounded-full bg-secondary-100 text-secondary-800 text-sm">Pop/Soft
+                                    Rock</span>
+                                <button
+                                    class="open-artist-modal ml-3 inline-flex items-center px-3 py-1 rounded-full bg-primary-500 text-white text-sm">Ver
+                                    más</button>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Fleetwood Mac -->
+                    <article
+                        class="artist-card bg-primary-200 rounded-2xl overflow-hidden shadow-soft hover:shadow-lg transition-transform duration-300 hover:-translate-y-1"
+                        data-albums="Fleetwood Mac;Rumours" data-songs="Landslide;Dreams;Go Your Own Way;The Chain">
+                        <div class="h-56 overflow-hidden">
+                            <img src="/Images/Artistas/Fleetwood Mac.webp" alt="Fleetwood Mac"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-xl font-heading font-bold text-neutral-900 mb-2">Fleetwood Mac</h3>
+                            <p class="text-sm text-primary-900 leading-relaxed mb-4">Banda británico-estadounidense que
+                                evolucionó desde el blues rock hasta el pop rock melódico. Su álbum Rumours (1977) es
+                                uno de los más vendidos de la historia.</p>
+                            <div class="flex items-center justify-between">
+                                <span
+                                    class="inline-flex items-center px-3 py-1 rounded-full bg-secondary-100 text-secondary-800 text-sm">Rock/Soft
+                                    Rock</span>
+                                <button
+                                    class="open-artist-modal ml-3 inline-flex items-center px-3 py-1 rounded-full bg-primary-500 text-white text-sm">Ver
+                                    más</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ABBA -->
+                    <article
+                        class="artist-card bg-primary-200 rounded-2xl overflow-hidden shadow-soft hover:shadow-lg transition-transform duration-300 hover:-translate-y-1"
+                        data-albums="Arrival;Voulez-Vous;The Visitors"
+                        data-songs="Dancing Queen;Slipping Through My Fingers;The Winner Takes It All">
+                        <div class="h-56 overflow-hidden">
+                            <img src="/Images/Artistas/ABBA.webp" alt="ABBA" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-xl font-heading font-bold text-neutral-900 mb-2">ABBA</h3>
+                            <p class="text-sm text-primary-900 leading-relaxed mb-4">Grupo sueco formado en 1972. Se
+                                convirtieron en una de las bandas más exitosas con himnos como Dancing Queen y Mamma
+                                Mia.</p>
+                            <div class="flex items-center justify-between">
+                                <span
+                                    class="inline-flex items-center px-3 py-1 rounded-full bg-secondary-100 text-secondary-800 text-sm">Pop/Disco</span>
+                                <button
+                                    class="open-artist-modal ml-3 inline-flex items-center px-3 py-1 rounded-full bg-primary-500 text-white text-sm">Ver
+                                    más</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Jim Croce -->
+                    <article
+                        class="artist-card bg-primary-200 rounded-2xl overflow-hidden shadow-soft hover:shadow-lg transition-transform duration-300 hover:-translate-y-1"
+                        data-albums="You Don't Mess Around with Jim;Life and Times"
+                        data-songs="Time in a Bottle;Operator;I’ll Have to Say I Love You in a Song">
+                        <div class="h-56 overflow-hidden">
+                            <img src="/Images/Artistas/Jim Croce.webp" alt="Jim Croce"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-xl font-heading font-bold text-neutral-900 mb-2">Jim Croce</h3>
+                            <p class="text-sm text-primary-900 leading-relaxed mb-4">Cantautor estadounidense de los
+                                años 70, conocido por sus letras nostálgicas y emotivas. Canciones como Time in a Bottle
+                                y Bad, Bad Leroy Brown destacaron por su narrativa y melodías cálidas.</p>
+                            <div class="flex items-center justify-between">
+                                <span
+                                    class="inline-flex items-center px-3 py-1 rounded-full bg-secondary-100 text-secondary-800 text-sm">Folk
+                                    Rock/Soft Rock</span>
+                                <button
+                                    class="open-artist-modal ml-3 inline-flex items-center px-3 py-1 rounded-full bg-primary-500 text-white text-sm">Ver
+                                    más</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Charly García -->
+                    <article
+                        class="artist-card bg-primary-200 rounded-2xl overflow-hidden shadow-soft hover:shadow-lg transition-transform duration-300 hover:-translate-y-1"
+                        data-albums="Clics Modernos;Piano Bar;Say No More"
+                        data-songs="Inconsciente Colectivo;Demoliendo Hoteles;Tu amor">
+                        <div class="h-56 overflow-hidden">
+                            <img src="/Images/Artistas/Charly García.webp" alt="Charly García"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-xl font-heading font-bold text-neutral-900 mb-2">Charly García</h3>
+                            <p class="text-sm text-primary-900 leading-relaxed mb-4">Músico argentino, una de las
+                                figuras más influyentes del rock en español. Fue parte de bandas icónicas como Sui
+                                Generis y Serú Girán.</p>
+                            <div class="flex items-center justify-between">
+                                <span
+                                    class="inline-flex items-center px-3 py-1 rounded-full bg-secondary-100 text-secondary-800 text-sm">Rock/Progresivo</span>
+                                <button
+                                    class="open-artist-modal ml-3 inline-flex items-center px-3 py-1 rounded-full bg-primary-500 text-white text-sm">Ver
+                                    más</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Elvis Presley -->
+                    <article
+                        class="artist-card bg-primary-200 rounded-2xl overflow-hidden shadow-soft hover:shadow-lg transition-transform duration-300 hover:-translate-y-1"
+                        data-albums="Elvis Presley (compilation);Elvis is Back"
+                        data-songs="Can't Help Falling in Love;Bourning Love;Always on My Mind">
+                        <div class="h-56 overflow-hidden">
+                            <img src="/Images/Artistas/Elvis.webp" alt="Elvis Presley"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-xl font-heading font-bold text-neutral-900 mb-2">Elvis Presley</h3>
+                            <p class="text-sm text-primary-900 leading-relaxed mb-4">Conocido como "El Rey del Rock &
+                                Roll", fue un pionero que llevó el género a la popularidad global con canciones como
+                                Jailhouse Rock y Hound Dog.</p>
+                            <div class="flex items-center justify-between">
+                                <span
+                                    class="inline-flex items-center px-3 py-1 rounded-full bg-secondary-100 text-secondary-800 text-sm">Rock
+                                    & Roll/Blues</span>
+                                <button
+                                    class="open-artist-modal ml-3 inline-flex items-center px-3 py-1 rounded-full bg-primary-500 text-white text-sm">Ver
+                                    más</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Michael Jackson -->
+                    <article
+                        class="artist-card bg-primary-200 rounded-2xl overflow-hidden shadow-soft hover:shadow-lg transition-transform duration-300 hover:-translate-y-1"
+                        data-albums="Thriller;Bad;Off the Wall" data-songs="Thriller;Billie Jean;Beat It">
+                        <div class="h-56 overflow-hidden">
+                            <img src="/Images/Artistas/Michael Jackson.webp" alt="Michael Jackson"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-xl font-heading font-bold text-neutral-900 mb-2">Michael Jackson</h3>
+                            <p class="text-sm text-primary-900 leading-relaxed mb-4">El "Rey del Pop", revolucionó la
+                                industria musical con su talento vocal, baile innovador y videoclips cinematográficos.
+                                Álbumes como Thriller redefinieron el pop.</p>
+                            <div class="flex items-center justify-between">
+                                <span
+                                    class="inline-flex items-center px-3 py-1 rounded-full bg-secondary-100 text-secondary-800 text-sm">Pop/Funk/Rock</span>
+                                <button
+                                    class="open-artist-modal ml-3 inline-flex items-center px-3 py-1 rounded-full bg-primary-500 text-white text-sm">Ver
+                                    más</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Freddie Mercury -->
+                    <article
+                        class="artist-card bg-primary-200 rounded-2xl overflow-hidden shadow-soft hover:shadow-lg transition-transform duration-300 hover:-translate-y-1"
+                        data-albums="A Night at the Opera;Mr. Bad Guy"
+                        data-songs="Love Me Like There’s No Tomorrow;I was Born to Love You;Living on My Own">
+                        <div class="h-56 overflow-hidden">
+                            <img src="/Images/Artistas/Freddie Mercury.webp" alt="Freddie Mercury"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-xl font-heading font-bold text-neutral-900 mb-2">Freddie Mercury</h3>
+                            <p class="text-sm text-primary-900 leading-relaxed mb-4">Líder de Queen, poseedor de una de
+                                las voces más impresionantes de la historia. Su presencia escénica y composiciones como
+                                Bohemian Rhapsody lo convirtieron en un icono.</p>
+                            <div class="flex items-center justify-between">
+                                <span
+                                    class="inline-flex items-center px-3 py-1 rounded-full bg-secondary-100 text-secondary-800 text-sm">Rock/Hard
+                                    Rock</span>
+                                <button
+                                    class="open-artist-modal ml-3 inline-flex items-center px-3 py-1 rounded-full bg-primary-500 text-white text-sm">Ver
+                                    más</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Janis Joplin -->
+                    <article
+                        class="artist-card bg-primary-200 rounded-2xl overflow-hidden shadow-soft hover:shadow-lg transition-transform duration-300 hover:-translate-y-1"
+                        data-albums="Cheap Thrills;I Got Dem Ol’ Kozmic Blues Again Mama!;Pearl"
+                        data-songs="Maybe;Piece of My Heart;Cry Baby;Kozmic Blues">
+                        <div class="h-56 overflow-hidden">
+                            <img src="/Images/Artistas/Janis Joplin.webp" alt="Janis Joplin"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-xl font-heading font-bold text-neutral-900 mb-2">Janis Joplin</h3>
+                            <p class="text-sm text-primary-900 leading-relaxed mb-4">Voz inigualable del rock de los 60,
+                                caracterizada por su intensidad emocional y estilo desgarrador. Como líder de Big
+                                Brother and the Holding Company dejó clásicos como Piece of My Heart.</p>
+                            <div class="flex items-center justify-between">
+                                <span
+                                    class="inline-flex items-center px-3 py-1 rounded-full bg-secondary-100 text-secondary-800 text-sm">Blues
+                                    Rock/Soul</span>
+                                <button
+                                    class="open-artist-modal ml-3 inline-flex items-center px-3 py-1 rounded-full bg-primary-500 text-white text-sm">Ver
+                                    más</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- George Harrison -->
+                    <article
+                        class="artist-card bg-primary-200 rounded-2xl overflow-hidden shadow-soft hover:shadow-lg transition-transform duration-300 hover:-translate-y-1"
+                        data-albums="All Things Must Pass;Living in the Material World"
+                        data-songs="My Sweet Lord;What Is Life;Give Me Love (Give Me Peace on Earth)">
+                        <div class="h-56 overflow-hidden">
+                            <img src="/Images/Artistas/GeorgeHarrison.webp" alt="George Harrison"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-xl font-heading font-bold text-neutral-900 mb-2">George Harrison</h3>
+                            <p class="text-sm text-primary-900 leading-relaxed mb-4">Guitarrista de The Beatles y
+                                prolífico solista, conocido como “el Beatle silencioso”. Su obra se caracteriza por la
+                                espiritualidad y la fusión entre rock y música hindú.</p>
+                            <div class="flex items-center justify-between">
+                                <span
+                                    class="inline-flex items-center px-3 py-1 rounded-full bg-secondary-100 text-secondary-800 text-sm">Blues
+                                    Rock/Folk Rock</span>
+                                <button
+                                    class="open-artist-modal ml-3 inline-flex items-center px-3 py-1 rounded-full bg-primary-500 text-white text-sm">Ver
+                                    más</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Soda Stereo -->
+                    <article
+                        class="artist-card bg-primary-200 rounded-2xl overflow-hidden shadow-soft hover:shadow-lg transition-transform duration-300 hover:-translate-y-1"
+                        data-albums="Signos;Doble Vida;Canción Animal, MTV Unplugged"
+                        data-songs="Corazón Delator; Crema de Estrellas, Efecto Doppler; Entre Caníbales">
+                        <div class="h-56 overflow-hidden">
+                            <img src="/Images/Artistas/SodaStereo.webp" alt="Soda Stereo"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-xl font-heading font-bold text-neutral-900 mb-2">Soda Stereo</h3>
+                            <p class="text-sm text-primary-900 leading-relaxed mb-4">Banda argentina liderada por
+                                Gustavo Cerati, pionera del rock en español y referente del movimiento latinoamericano
+                                en los 80 y 90 (¡Larga Vida a Soda Stereo!).</p>
+                            <div class="flex items-center justify-between">
+                                <span
+                                    class="inline-flex items-center px-3 py-1 rounded-full bg-secondary-100 text-secondary-800 text-sm">
+                                    Rock en Español/New Wave</span>
+                                <button
+                                    class="open-artist-modal ml-3 inline-flex items-center px-3 py-1 rounded-full bg-primary-500 text-white text-sm">Ver
+                                    más</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Frank Sinatra -->
+                    <article
+                        class="artist-card bg-primary-200 rounded-2xl overflow-hidden shadow-soft hover:shadow-lg transition-transform duration-300 hover:-translate-y-1"
+                        data-albums="In the Wee Hours;Come Fly with Me"
+                        data-songs="My Way;My Way;Strangers in the Night;Fly Me to the Moon">
+                        <div class="h-56 overflow-hidden">
+                            <img src="/Images/Artistas/FrankSinatra.webp" alt="Frank Sinatra"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-xl font-heading font-bold text-neutral-900 mb-2">Frank Sinatra</h3>
+                            <p class="text-sm text-primary-900 leading-relaxed mb-4">Cantante estadounidense apodado “La
+                                Voz”, ícono del siglo XX. Su estilo elegante y su interpretación emotiva lo convirtieron
+                                en símbolo del swing y las baladas románticas en general.</p>
+                            <div class="flex items-center justify-between">
+                                <span
+                                    class="inline-flex items-center px-3 py-1 rounded-full bg-secondary-100 text-secondary-800 text-sm">Blues
+                                    Jazz/Swing</span>
+                                <button
+                                    class="open-artist-modal ml-3 inline-flex items-center px-3 py-1 rounded-full bg-primary-500 text-white text-sm">Ver
+                                    más</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Pink Floyd -->
+                    <article
+                        class="artist-card bg-primary-200 rounded-2xl overflow-hidden shadow-soft hover:shadow-lg transition-transform duration-300 hover:-translate-y-1"
+                        data-albums="The Dark Side of the Moon;Wish You Were Here;The Wall"
+                        data-songs="Time;Wish You Were Here;Comfortably Numb">
+                        <div class="h-56 overflow-hidden">
+                            <img src="/Images/Artistas/PinkFloyd.webp" alt="Pink Floyd"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-xl font-heading font-bold text-neutral-900 mb-2">Pink Floyd</h3>
+                            <p class="text-sm text-primary-900 leading-relaxed mb-4">Banda británica de rock progresivo
+                                y psicodélico, famosa por sus álbumes conceptuales y su experimentación sonora...</p>
+                            <div class="flex items-center justify-between">
+                                <span
+                                    class="inline-flex items-center px-3 py-1 rounded-full bg-secondary-100 text-secondary-800 text-sm">
+                                    Rock Progresivo/Psicodélico</span>
+                                <button
+                                    class="open-artist-modal ml-3 inline-flex items-center px-3 py-1 rounded-full bg-primary-500 text-white text-sm">Ver
+                                    más</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Led Zeppelin -->
+                    <article
+                        class="artist-card bg-primary-200 rounded-2xl overflow-hidden shadow-soft hover:shadow-lg transition-transform duration-300 hover:-translate-y-1"
+                        data-albums="Led Zeppelin IV;Physical Graffiti; Houses of the Holy"
+                        data-songs="Stairway to Heaven;Kashmir;Whole Lotta Love">
+                        <div class="h-56 overflow-hidden">
+                            <img src="/Images/Artistas/LedZeppelin.webp" alt="Led Zeppelin"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-xl font-heading font-bold text-neutral-900 mb-2">Led Zeppelin</h3>
+                            <p class="text-sm text-primary-900 leading-relaxed mb-4">Banda británica de rock y heavy
+                                metal, famosa por su sonido innovador y sus álbumes icónicos como Led Zeppelin IV.</p>
+                            <div class="flex items-center justify-between">
+                                <span
+                                    class="inline-flex items-center px-3 py-1 rounded-full bg-secondary-100 text-secondary-800 text-sm">Blues
+                                    Hard Rock/Heavy Metal</span>
+                                <button
+                                    class="open-artist-modal ml-3 inline-flex items-center px-3 py-1 rounded-full bg-primary-500 text-white text-sm">Ver
+                                    más</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Roberto Carlos -->
+                    <article
+                        class="artist-card bg-primary-200 rounded-2xl overflow-hidden shadow-soft hover:shadow-lg transition-transform duration-300 hover:-translate-y-1"
+                        data-albums="Roberto Carlos;Amigo;Amor Sem Limite"
+                        data-songs="Propuesta;Cama y Mesa;Detalles;El Gato que está Triste y Azul">
+                        <div class="h-56 overflow-hidden">
+                            <img src="/Images/Artistas/RobertoCarlos.webp" alt="Roberto Carlos"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-xl font-heading font-bold text-neutral-900 mb-2">Roberto Carlos</h3>
+                            <p class="text-sm text-primary-900 leading-relaxed mb-4">Cantante y compositor brasileño,
+                                conocido por su voz potente y su estilo único que mezcla bossa nova, samba y rock.
+                                caracterizada por su intensidad emocional y estilo desgarrador. Su estilo romántico y
+                                melódico lo convirtió en referente de la música en portugués y español.</p>
+                            <div class="flex items-center justify-between">
+                                <span
+                                    class="inline-flex items-center px-3 py-1 rounded-full bg-secondary-100 text-secondary-800 text-sm">Blues
+                                    Balada Romántica</span>
+                                <button
+                                    class="open-artist-modal ml-3 inline-flex items-center px-3 py-1 rounded-full bg-primary-500 text-white text-sm">Ver
+                                    más</button>
+                            </div>
+                        </div>
+                    </article>
+
+
+
+                </div>
+
+                <!-- Pagination controls -->
+                <div id="artists-pagination" class="mt-8 flex items-center justify-center gap-3"></div>
+            </div>
+        </section>
+
+        <!-- Modal container -->
+        <div id="artist-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4">
+            <div class="absolute inset-0 bg-black/60" data-close-modal></div>
+            <div class="relative max-w-2xl w-full bg-primary-900 rounded-2xl p-6 shadow-2xl text-primary-50">
+                <button data-close-modal
+                    class="absolute top-4 right-4 text-primary-100 hover:text-white">Cerrar</button>
+                <h3 id="artist-modal-title" class="text-2xl font-heading font-bold mb-3"></h3>
+                <p id="artist-modal-bio" class="text-sm text-primary-200 mb-4"></p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <h4 class="font-semibold text-primary-100 mb-2">Álbumes</h4>
+                        <ul id="artist-modal-albums" class="list-disc pl-5 text-primary-200"></ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-primary-100 mb-2">Canciones recomendadas</h4>
+                        <ul id="artist-modal-songs" class="list-disc pl-5 text-primary-200"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contenedor para footer dinámico -->
+        <div id="footer-container"></div>
+    </main>
+    <!-- Scripts -->
+    <script src="/Scripts/components.js"></script>
+    <script src="/Scripts/scripts.js"></script>
+
+</body>
+
+</html>
