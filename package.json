@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build:css": "tailwindcss -i ./Styles/styles.css -o ./dist/output.css --watch"
+    "build:css": "tailwindcss -i ./Styles/styles.css -o ./dist/output.css --watch",
+    "build": "npm run build:css"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.0",
